@@ -2,7 +2,7 @@
     "baseURL": "https://garykim.dev/",
     "languageCode:": "en-us",
     "title": "Gary Kim",
-    "theme": "hyde",
+    "theme": "hyde-hyde",
     "pygmentsuseclasses": true,
     "canonifyurls": true,
     "enableRobotsTXT": true,
@@ -22,7 +22,10 @@
     "params": {
         "description": "My personal website",
         "themeColor": "theme-base-0d",
-        "copyright": "© 2019 Gary Kim, All Rights Reserved",
-        "custom_css": ["main.css"]
+        "copyright": "© 2019 Gary Kim,<br />All Rights Reserved",
+        "custom_css": ["main.css"],
+        "social": {
+            "github": "gary-kim"
+        }
     }
 }
