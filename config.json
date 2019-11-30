@@ -1,0 +1,28 @@
+{
+    "baseURL": "https://garykim.dev/",
+    "languageCode:": "en-us",
+    "title": "Gary Kim",
+    "theme": "hyde",
+    "pygmentsuseclasses": true,
+    "canonifyurls": true,
+    "enableRobotsTXT": true,
+    "enableGitInfo": true,
+    "Menus": {
+        "main": [
+            {
+                "Name": "GitHub",
+                "URL": "https://github.com/gary-kim"
+            },
+            {
+                "Name": "Liberapay",
+                "URL": "https://liberapay.com/gary-kim"
+            }
+        ]
+    },
+    "params": {
+        "description": "My personal website",
+        "themeColor": "theme-base-0d",
+        "copyright": "© 2019 Gary Kim, All Rights Reserved",
+        "custom_css": ["main.css"]
+    }
+}

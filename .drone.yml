@@ -1,0 +1,31 @@
+kind: pipeline
+name: deploy
+
+steps:
+  - name: submodules
+    image: docker:git
+    commands:
+      - git submodule update --init --recursive
+  - name: build-site
+    image: garykim/hugo:0-extended
+    commands:
+      - make prod
+  - name: deploy-site
+    image: garykim/rclone
+    environment:
+      RCLONE_CONFIG_PASS:
+        from_secret: rclone_config_pass
+    commands:
+      - make deploy
+    when:
+      branch:
+        - master
+      event:
+        - push
+      repo:
+        - gary-kim/website
+
+---
+kind: secret
+name: rclone_config_pass
+data: t/tqPP90eLpZaJn1pBvybGjre10oV0n5L8WEkDAjiKXGDylP2+92dUr2M9PBLgpq
