@@ -8,10 +8,12 @@ steps:
       - git submodule update --init --recursive
   - name: build-site
     image: garykim/hugo:0-extended
+    pull: always
     commands:
       - make prod
   - name: deploy-site
     image: garykim/rclone
+    pull: always
     environment:
       RCLONE_CONFIG_PASS:
         from_secret: rclone_config_pass
