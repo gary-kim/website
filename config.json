@@ -7,6 +7,9 @@
     "canonifyurls": true,
     "enableRobotsTXT": true,
     "enableGitInfo": true,
+    "permalinks": {
+        "blog": "/blog/:year/:month/:day/:title/"
+    },
     "Menus": {
         "main": [
             {
