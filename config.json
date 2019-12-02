@@ -14,11 +14,18 @@
         "main": [
             {
                 "Name": "GitHub",
-                "URL": "https://github.com/gary-kim"
+                "URL": "https://github.com/gary-kim",
+                "weight": 1
             },
             {
                 "Name": "Liberapay",
-                "URL": "https://liberapay.com/gary-kim"
+                "URL": "https://liberapay.com/gary-kim",
+                "weight": 5
+            },
+            {
+                "Name": "Blog RSS",
+                "URL": "/blog/index.xml",
+                "weight": 100
             }
         ]
     },
