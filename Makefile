@@ -22,4 +22,4 @@ serve:
 	$(HUGO) serve ${extra_args}
 
 deploy:
-	rclone sync --config scripts/deploy.rclone.conf ./public deploy:"garykim.dev"
+	rclone sync --config scripts/deploy.rclone.conf --ignore-times ./public deploy:"garykim.dev"
