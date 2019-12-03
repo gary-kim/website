@@ -1,0 +1,5 @@
+<video controls>
+    {{ with .Get "mp4" }}
+        <source src="{{ . }}" type="video/mp4">
+    {{ end }}
+</video>
