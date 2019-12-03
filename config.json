@@ -36,6 +36,7 @@
         "custom_css": ["main.css"],
         "social": {
             "github": "gary-kim"
-        }
+        },
+        "dateformat": "2006-01-02"
     }
 }
