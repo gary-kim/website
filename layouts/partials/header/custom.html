@@ -1,3 +1,7 @@
+{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" />
+
 <!-- Matomo -->
 <script type="text/javascript">
     var _paq = window._paq || [];
