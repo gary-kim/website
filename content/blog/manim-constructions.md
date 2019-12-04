@@ -5,7 +5,7 @@ tags: ["Math"]
 publishDate: 2019-12-03
 ---
 
-Just a few fun constructions made in [Manim](https://github.com/3b1b/manim). Manim (Math Animation Engine) <cite href="https://github.com/3b1b/manim">is an animation engine for explanatory math videos</cite> made by [3Blue1Brown](www.3blue1brown.com) (Grant Sanderson) and available under the MIT license.
+Just a few fun constructions made in [Manim](https://github.com/3b1b/manim). Manim (Math Animation Engine) <cite href="https://github.com/3b1b/manim">is an animation engine for explanatory math videos</cite> made by [3Blue1Brown](https://www.3blue1brown.com) (Grant Sanderson) and available under the MIT license.
 
 <!--more-->
 
