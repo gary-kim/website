@@ -6,6 +6,9 @@ This is the repo for my personal website.
 
 ### License
 
-Copyright &copy; 2019 Gary Kim &lt;<gary@garykim.dev>&gt;, All Rights Reserved
+Copyright &copy; 2019 Gary Kim &lt;<gary@garykim.dev>&gt;
 
-May be licensed under CC eventually but not now.
+* Content in the content/ folder is licensed under CC-BY-SA-4.0
+* Content outside of the content/ folder is licensed under AGPL-3.0-only
+
+Full license text avaliable in [LICENSE](LICENSE) file.

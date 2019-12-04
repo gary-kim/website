@@ -32,7 +32,7 @@
     "params": {
         "description": "My personal website",
         "themeColor": "theme-base-0d",
-        "copyright": "© 2019 Gary Kim,<br />All Rights Reserved",
+        "copyright": "© 2019 Gary Kim,<br />All Rights Reserved<br />Content licensed <a href=\"https://github.com/gary-kim/website/blob/master/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">CC-BY-SA-4.0</a>",
         "custom_css": ["main.css"],
         "social": {
             "github": "gary-kim"
