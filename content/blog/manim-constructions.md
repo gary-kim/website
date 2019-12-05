@@ -42,7 +42,7 @@ Given a line, draw a regular pentagon for which the given line would be a side.
 ---
 ## 3D Constructions
 
-What can you make in 3 dimentions with just spheres? 
+What can you make in 3 dimensions with just spheres? 
 
 #### Plane to Perpendicular Line
 
@@ -61,7 +61,7 @@ Given a line, draw a plane that is perpendicular to the line.
 
 #### Following Getting Started
 
-Just trying to figure out what is capable with Manim.
+Just trying to figure out what is possible with Manim. Mostly following the getting started guides.
 
 {{< video mp4="/res/large/manim-constructions/EnterScene.mp4" >}}
 
