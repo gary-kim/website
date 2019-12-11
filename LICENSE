@@ -2,8 +2,9 @@ Copyright © 2019 Gary Kim <gary@garykim.dev>, All Rights Reserved
 
 The contents of this blog and its source is licensed as follows:
 
-* Content in the content/ folder is licensed under CC-BY-SA-4.0
-* Content outside of the content/ folder is licensed under AGPL-3.0-only
+* Content in the content/ directory is licensed under CC-BY-SA-4.0
+* Content in the static/res/ directory is licensed under CC-BY-SA-4.0
+* Content outside of the above mentioned directories are licensed under AGPL-3.0-only
 
 License text for the CC-BY-SA-4.0 and AGPL-3.0-only licenses below
 
