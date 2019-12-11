@@ -3,7 +3,6 @@
     "languageCode:": "en-us",
     "title": "Gary Kim",
     "theme": "hyde-hyde",
-    "pygmentsuseclasses": true,
     "canonifyurls": true,
     "enableRobotsTXT": true,
     "enableGitInfo": true,
@@ -44,6 +43,16 @@
             "renderer": {
                 "unsafe": true
             }
+        },
+        "highlight": {
+            "codeFences": true,
+            "hl_Lines": "",
+            "lineNoStart": 1,
+            "lineNos": true,
+            "lineNumbersInTable": true,
+            "noClasses": true,
+            "style": "monokai",
+            "tabWidth": 4
         }
     }
 }
