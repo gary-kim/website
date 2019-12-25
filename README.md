@@ -8,7 +8,8 @@ This is the repo for my personal website.
 
 Copyright &copy; 2019 Gary Kim &lt;<gary@garykim.dev>&gt;
 
-* Content in the content/ folder is licensed under CC-BY-SA-4.0
-* Content outside of the content/ folder is licensed under AGPL-3.0-only
+* Content in the content/ directory is licensed under CC-BY-SA-4.0
+* Content in the static/res/ directory is licensed under CC-BY-SA-4.0
+* Content outside of the above mentioned directories are licensed under AGPL-3.0-only
 
 Full license text avaliable in [LICENSE](LICENSE) file.
