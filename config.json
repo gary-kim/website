@@ -34,7 +34,8 @@
         "copyright": "© 2019 Gary Kim,<br />All Rights Reserved<br />Content licensed <a href=\"https://github.com/gary-kim/website/blob/master/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">CC-BY-SA-4.0</a>",
         "custom_css": ["main.css"],
         "social": {
-            "github": "gary-kim"
+            "github": "gary-kim",
+            "mastodon": "https://social.garykim.dev/@gary"
         },
         "dateformat": "2006-01-02"
     },
