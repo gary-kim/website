@@ -6,7 +6,7 @@
     "canonifyurls": true,
     "enableRobotsTXT": true,
     "enableGitInfo": true,
-    "copyright": "© 2020 Gary Kim,<br />All Rights Reserved<br />Content licensed <a href=\"https://github.com/gary-kim/website/blob/master/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">CC-BY-SA-4.0</a>",
+    "copyright": "© 2019-2020 Gary Kim,<br />All Rights Reserved<br />Content licensed <a href=\"https://github.com/gary-kim/website/blob/master/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">CC-BY-SA-4.0</a>",
     "author": {
         "email": "gary@garykim.dev",
         "name": "Gary Kim"
