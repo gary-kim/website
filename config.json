@@ -34,7 +34,8 @@
         "custom_css": ["main.css"],
         "social": {
             "github": "gary-kim",
-            "mastodon": "https://social.garykim.dev/@gary"
+            "mastodon": "https://social.garykim.dev/@gary",
+            "gitlab": "gary-kim"
         },
         "dateformat": "2006-01-02"
     },
