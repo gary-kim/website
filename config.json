@@ -17,8 +17,8 @@
     "Menus": {
         "main": [
             {
-                "URL": "https://liberapay.com/gary-kim/donate",
-                "Pre": "<img alt=\"Donate using Liberapay\" style=\"margin: auto;\"src=\"https://liberapay.com/assets/widgets/donate.svg\">",
+                "URL": "https://github.com/sponsors/gary-kim",
+                "Pre": "<img alt=\"Donate using GitHub Sponsors\" style=\"margin: auto;\"src=\"/github-sponsors.png\">",
                 "weight": 5
             },
             {
