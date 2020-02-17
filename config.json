@@ -24,7 +24,7 @@
             },
             {
                 "URL": "https://garykim.dev/blog/index.xml",
-                "Pre": "<img alt=\"Blog RSS Feed\" style=\"margin: auto; height: 1.3em;\" src=\"/rss-feed-button.png\">",
+                "Pre": "<img alt=\"Blog RSS Feed\" style=\"margin: auto; height: 1.3em;\" src=\"/rss-shield.svg\">",
                 "weight": 100
             }
         ]
