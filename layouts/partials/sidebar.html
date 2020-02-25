@@ -4,7 +4,15 @@
     {{ partial "sidebar/about.html" . }}
     <div class="collapsible-menu">
       <input type="checkbox" id="menuToggle">
-      <label for="menuToggle">{{ .Site.Title }}</label>
+      <label for="menuToggle">
+        {{ with .Site.Params.logoimage }}
+          {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
+          {{ $logoImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
+          <img src="{{$logoImage}}" alt="{{ $.Site.Title }}" class="element--center logo-image">
+        {{ else }}
+          {{ .Site.Title }}
+        {{ end }}
+      </label>
       <div class="menu-content">
         {{ partial "sidebar/menu.html" . }}
         {{ partial "sidebar/social.html" . }}

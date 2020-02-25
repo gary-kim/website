@@ -4,9 +4,9 @@
       {{ with .Site.Params.logoimage }}
         {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
         {{ $logoImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
-        <img src="{{$logoImage}}" alt="Logo Image" class="element--center">
+        <img src="{{$logoImage}}" alt="{{ $.Site.Title }}" class="element--center logo-image">
       {{ else }}
-        {{ .Site.Title }}bb8
+        {{ .Site.Title }}
       {{ end }}
     </a>
   </span>
