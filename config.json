@@ -1,7 +1,7 @@
 {
     "baseURL": "https://garykim.dev/",
     "languageCode:": "en-us",
-    "title": "Gary Kim",
+    "title": "Gary Kim: Website",
     "theme": "hyde-hyde",
     "canonifyurls": true,
     "enableRobotsTXT": true,
@@ -36,9 +36,11 @@
         "social": {
             "github": "gary-kim",
             "mastodon": "https://social.garykim.dev/@gary",
-            "gitlab": "gary-kim"
+            "gitlab": "gary-kim",
+            "email": "gary@garykim.dev"
         },
-        "dateformat": "2006-01-02"
+        "dateformat": "2006-01-02",
+        "logoimage": "/website-logo.png"
     },
     "markup": {
         "goldmark": {
