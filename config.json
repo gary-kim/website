@@ -17,13 +17,18 @@
     "Menus": {
         "main": [
             {
+                "URL": "/key.gpg",
+                "Name": "GPG Key",
+                "weight": 25
+            },
+            {
                 "URL": "https://github.com/sponsors/gary-kim",
                 "Pre": "<img alt=\"Donate using GitHub Sponsors\" style=\"margin: auto auto 0.5em auto; height: 1.5em;\" src=\"/github-sponsors.png\">",
                 "Name": " ",
                 "weight": 50
             },
             {
-                "URL": "https://garykim.dev/blog/index.xml",
+                "URL": "/blog/index.xml",
                 "Pre": "<img alt=\"Blog RSS Feed\" style=\"margin: auto; height: 1.3em;\" src=\"/rss-shield.svg\">",
                 "weight": 100
             }
