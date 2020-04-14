@@ -45,7 +45,9 @@
             "email": "gary@garykim.dev"
         },
         "dateformat": "2006-01-02",
-        "logoimage": "/website-logo.png"
+        "logoimage": "/website-logo.png",
+        "toc": "hugo",
+        "include_toc": false
     },
     "markup": {
         "goldmark": {
