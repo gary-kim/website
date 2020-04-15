@@ -27,6 +27,13 @@ steps:
       repo:
         - gary-kim/website
 
+trigger:
+  branch:
+    - master
+  event:
+    - pull_request
+    - push
+
 ---
 kind: secret
 name: rclone_config_pass
