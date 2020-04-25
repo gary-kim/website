@@ -1,6 +1,7 @@
 video {
     max-width: 100%;
 }
+
 .post__meta {
     svg {
         padding-right: 5px;
@@ -10,4 +11,34 @@ video {
 .logo-image {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.post-list__item, article {
+    box-shadow: 2px 2px 5px 0px #878787;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+a.read-more-symbol {
+    border: #00cc00 1px solid;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 15px;
+    color: #00cc00 !important;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    //max-width: min(80%, 800px); // Put in css file instead.
+}
+
+@media (min-width: 1024px) {
+    .inside-body {
+        padding-left: 16rem;
+    }
+}
+
+.posts {
+    padding-left: 0;
 }

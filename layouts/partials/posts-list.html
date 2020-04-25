@@ -1,0 +1,18 @@
+{{ range . }}
+<div class="post-list__item">
+        <span class="item__title--big">
+          <a href="{{ .RelPermalink }}" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>{{ .Title }}</a>
+        </span>
+    {{ partial "page-single/post-meta" . }}
+    <div {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
+    {{ if .Description }}
+    {{ .Description }}
+    {{ else }}
+    {{ .Summary }}
+    {{ end }}
+</div>
+{{ if .Truncated }}
+<a class="read-more-symbol" href="{{ .RelPermalink }}">Read More</a>
+{{ end }}
+</div>
+{{ end }}

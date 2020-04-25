@@ -1,6 +1,11 @@
 ---
 title: "Scrapdash - Hack & Roll 2020"
 date: 2020-02-01T02:50:13Z
+tags:
+- Hackathon
+- Hack & Roll
+- Scrapdash
+description: "What our team made at the Hack & Roll 2020 Hackathon: Scrapdash"
 ---
 
 Recently, I had the opportunity to go to [Hack & Roll 2020](https://hacknroll.nushackers.org) ([Devpost](https://hacknroll2020.devpost.com)), hosted by annually [NUS (National University of Singapore)](http://nus.edu.sg/) and organized by [NUS Hackers](https://www.nushackers.org/) in Singapore.

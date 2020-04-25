@@ -1,7 +1,7 @@
 ---
 title: "Constructions with Manim"
 date: 2019-12-03T02:20:25Z
-tags: ["Math"]
+tags: ["Math", "Manim"]
 publishDate: 2019-12-03
 ---
 

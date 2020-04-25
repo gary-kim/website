@@ -37,7 +37,7 @@
     "params": {
         "description": "My personal website",
         "themeColor": "theme-base-0d",
-        "custom_css": ["main.css"],
+        "custom_css": ["main.css", "main2.css"],
         "social": {
             "github": "gary-kim",
             "mastodon": "https://social.garykim.dev/@gary",
