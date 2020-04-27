@@ -40,9 +40,9 @@
         "custom_css": ["main.css", "main2.css"],
         "social": {
             "github": "gary-kim",
-            "mastodon": "https://social.garykim.dev/@gary",
             "gitlab": "gary-kim",
-            "email": "gary@garykim.dev"
+            "email": "gary@garykim.dev",
+            "matrix": "@gary:garykim.dev"
         },
         "dateformat": "2006-01-02",
         "logoimage": "/website-logo.png",
