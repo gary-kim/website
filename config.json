@@ -17,6 +17,11 @@
     "Menus": {
         "main": [
             {
+                "URL": "/projects/",
+                "Name": "Projects",
+                "weight": 20
+            },
+            {
                 "URL": "/key.gpg",
                 "Name": "GPG Key",
                 "weight": 25
@@ -64,6 +69,9 @@
             "noClasses": true,
             "style": "monokai",
             "tabWidth": 4
+        },
+        "tableOfContents": {
+            "startLevel": 1
         }
     }
 }
