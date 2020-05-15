@@ -86,4 +86,4 @@ The final step is to push the new repo to the host using [Rclone](https://github
 The funny thing at the end of all this was that it turns out there is already an F-Droid repo by the NewPipe developers that is updated faster then the official F-Droid repo. The repo is not yet public but you can ask around on the NewPipe IRC and they'll give it to you.
 The main problem I was attempting to address by creating my own F-Droid Repo could have been addressed in a way that was much easier but it was still a very nice learning experience.
 
-I now have a personal F-Droid repo with NewPipe and a couple other apps that are not available through the F-Droid repos at <https://f-droid.garykim.dev/repo/fdroid>.
+I now have a personal F-Droid repo with NewPipe and a couple other apps that are not available through the F-Droid repos at <https://f-droid.garykim.dev/fdroid/repo/>.
