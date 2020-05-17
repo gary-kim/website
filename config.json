@@ -53,7 +53,10 @@
         "dateformat": "2006-01-02",
         "logoimage": "/website-logo.png",
         "toc": "hugo",
-        "include_toc": false
+        "include_toc": false,
+        "UtterancesRepo": "gary-kim/blog-utterances",
+        "UtterancesIssueTerm": "pathname",
+        "UtterancesTheme": "github-light"
     },
     "markup": {
         "goldmark": {
