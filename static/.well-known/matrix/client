@@ -1,5 +1,6 @@
 {
     "m.homeserver": {
-        "base_url": "https://matrix.garykim.dev/"
+        "base_url": "https://matrix.garykim.dev/",
+        "server_name": "Gary Kim Matrix Server"
     }
 }
