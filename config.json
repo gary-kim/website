@@ -20,7 +20,9 @@
                 "URL": "/projects/",
                 "Name": "Projects",
                 "weight": 20
-            },
+            }
+        ],
+        "external": [
             {
                 "URL": "/key.gpg",
                 "Name": "GPG Key",

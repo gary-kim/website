@@ -16,9 +16,9 @@ SAS Powerschool Enhancement Suite is a free and open source extension for Firefo
 * Firefox Download: <https://github.com/gary-kim/saspes/releases>
 * Chrome Web Store Download: <https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk>
 
-![Main Screenshot](/res/large/projects/saspes/1.png)
-![Second Screenshot](/res/large/projects/saspes/2.png)
-![Third Screenshot](/res/large/projects/saspes/3.png)
+{{< figure src="/res/large/projects/saspes/1.png" alt="Main Screenshot" class="centered" >}}
+{{< figure src="/res/large/projects/saspes/2.png" alt="Second Screenshot" class="centered" >}}
+{{< figure src="/res/large/projects/saspes/3.png" alt="Third Screenshot" class="centered" >}}
 
 ---
 # Riot Chat for Nextcloud
@@ -31,7 +31,7 @@ Riot Chat for Nextcloud is a Nextcloud App that integrates Riot.im into Nextclou
 * GitHub Project: <https://github.com/gary-kim/riotchat>
 * Matrix Development Chat: <https://matrix.to/#/+riotchat-nextcloud:garykim.dev>
 
-![Screenshot](/res/large/riotchat-for-nextcloud/main-screenshot.png)
+{{< figure src="/res/large/riotchat-for-nextcloud/main-screenshot.png" alt="Screenshot" class="centered" >}}
 
 ---
 # Open IAS Scoreboard
@@ -44,5 +44,5 @@ Open IAS Scoreboard is an Electron application for putting scoreboards on sports
 * GitHub Project: <https://github.com/gary-kim/open-ias-scoreboard>
 * Project Website: <https://github.com/gary-kim/>
 
-![Control Board Screenshot](https://openias.garykim.dev/img/controlboard-screenshot.png)
-![Scoreboard Screenshot](https://openias.garykim.dev/img/scoreboard-screenshot.png)
+{{< figure src="https://openias.garykim.dev/img/controlboard-screenshot.png" alt="Control Board Screenshot" class="centered" >}}
+{{< figure src="https://openias.garykim.dev/img/scoreboard-screenshot.png" alt="Scoreboard Screenshot" class="centered" >}}

@@ -1,12 +1,12 @@
 <div>
 	<ul class="sidebar-nav">
-		{{ $currentPage := . }} 
+		{{ $currentPage := . }}
 		<li>
 			<a href="{{ absURL "/" }}">
 				<span>Home</span>
 			</a>
 		</li>
-		{{ range .Site.Menus.main }} 
+		{{ range .Site.Menus.main }}
 			{{ if .HasChildren }}
 			<li {{ if $currentPage.HasMenuCurrent "main" . }}class="active"{{ end }}>
 				<a href="#">{{ .Pre }}
@@ -15,18 +15,40 @@
 				<ul class="sidebar-nav">
 					{{ range .Children }}
 					<li {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
-						<a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">{{ .Name | title }}</a>
+						<a href="{{ .URL }}" rel="noopener noreferrer">{{ .Name | title }}</a>
 					</li>
 					{{ end }}
 				</ul>
 			</li>
 			{{ else }} <!-- No children -->
 				<li>
-					<a href="{{.URL}}" target="_blank" rel="noopener noreferrer">{{ .Pre }}
+					<a href="{{.URL}}" rel="noopener noreferrer">{{ .Pre }}
 						<span>{{ .Name | title }}</span>
 					</a>
 				</li>
-			{{ end }} 
+			{{ end }}
+		{{ end }}
+		{{ range .Site.Menus.external }}
+			{{ if .HasChildren }}
+			<li {{ if $currentPage.HasMenuCurrent "main" . }}class="active"{{ end }}>
+			<a href="#">{{ .Pre }}
+				<span>{{ .Name }}</span>
+			</a>
+			<ul class="sidebar-nav">
+				{{ range .Children }}
+				<li {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
+				<a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">{{ .Name | title }}</a>
+				</li>
+				{{ end }}
+			</ul>
+			</li>
+			{{ else }} <!-- No children -->
+			<li>
+				<a href="{{.URL}}" target="_blank" rel="noopener noreferrer">{{ .Pre }}
+					<span>{{ .Name | title }}</span>
+				</a>
+			</li>
+			{{ end }}
 		{{ end }}
 	</ul>
 </div>
