@@ -20,6 +20,11 @@
                 "URL": "/projects/",
                 "Name": "Projects",
                 "weight": 20
+            },
+            {
+                "URL": "/contact/",
+                "Name": "Contact Me",
+                "weight": 30
             }
         ],
         "external": [
