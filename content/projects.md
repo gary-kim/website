@@ -3,6 +3,7 @@ title: "Projects"
 descriptions: My projects. All the projects in this list are open source.
 include_toc: true
 showpagemeta: false
+postNavigation: false
 ---
 
 # SAS Powerschool Enhancement Suite

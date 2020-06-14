@@ -1,0 +1,85 @@
+{{ with .Site.Params.social.twitter }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "twitter") }}
+<a href="https://twitter.com/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Twitter: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.facebook }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "facebook") }}
+<a href="https://facebook.com/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Facebook: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.github }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "github") }}
+<a href="https://github.com/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}GitHub: @{{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.bitbucket }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "bitbucket") }}
+<a href="https://bitbucket.org/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Bitbucket: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ $gitlab_domain := "gitlab.com" }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "gitlab") }}
+{{ with .Site.Params.social.custom_gitlab_domain }}
+	{{ $gitlab_domain = . }}
+{{ end }}
+{{ with .Site.Params.social.gitlab }}
+<a href="https://{{ $gitlab_domain }}/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}GitLab: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.instagram }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "instagram") }}
+<a href="https://instagram.com/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Instagram: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.linkedin }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "linkedin") }}
+<a href="https://linkedin.com/in/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Linkedin: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.stackoverflow }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "stackoverflow") }}
+<a href="https://stackoverflow.com/users/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Stack Overflow: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.medium}}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "medium") }}
+<a href="https://medium.com/@{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Medium: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.xing }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "xing") }}
+<a href="https://www.xing.com/profile/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Xing: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.keybase }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "keybase") }}
+<a href="https://keybase.io/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Keybase: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.telegram }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "telegram") }}
+<a href="https://t.me/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Telegram: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.aboutme }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "aboutme") }}
+&nbsp;<a href="https://about.me/{{.}}" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}About Me: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.email }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "email") }}
+<a href="mailto:{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}{{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+{{ with .Site.Params.social.matrix }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "matrix") }}
+<a href="https://matrix.to/#/{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Matrix: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
+<!-- TODO: Remove once https://github.com/htr3n/hyde-hyde/pull/100 is merged -->
+{{ with .Site.Params.social.mastodon }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "mastodon") }}
+<a href="{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Mastodon: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
