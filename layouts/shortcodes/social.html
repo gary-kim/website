@@ -83,3 +83,8 @@
 <a href="{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}Mastodon: {{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
 {{ end }}
 {{ end }}
+{{ with .Site.Params.social.discord }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "discord") }}
+{{ with $.Inner }}{{ . }}{{ else }}Discord: {{ . }}{{ end }}{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
