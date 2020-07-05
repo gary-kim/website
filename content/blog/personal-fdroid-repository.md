@@ -9,6 +9,8 @@ tags:
 include_toc: true
 ---
 
+![Screenshot on Phone](/res/large/personal-fdroid-repo/screenshot-1.png)
+
 On my Android phone, most of the apps installed are open source ones installed from the [F-Droid](https://f-droid.org) repository.
 One of these apps that I use everyday is [NewPipe](https://github.com/teamnewpipe/newpipe), an <cite href="https://github.com/teamnewpipe/newpipe">libre lightweight streaming front-end</cite>, mainly used for watching Youtube.
 
