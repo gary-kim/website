@@ -1,2 +1,4 @@
-public/
-resources/
+/public/
+/resources/
+/node_modules/
+/static/js/dist

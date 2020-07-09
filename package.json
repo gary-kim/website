@@ -1,0 +1,23 @@
+{
+  "name": "garykim.dev",
+  "version": "0.0.1",
+  "description": "[![Build Status](https://ghdrone.garykim.dev/api/badges/gary-kim/website/status.svg)](https://ghdrone.garykim.dev/gary-kim/website)",
+  "main": "index.js",
+  "scripts": {
+    "build": "scripts/js.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gary-kim/website.git"
+  },
+  "author": "Gary Kim <gary@garykim.dev>",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/gary-kim/website/issues"
+  },
+  "homepage": "https://github.com/gary-kim/website#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "viewerjs": "^1.6.1"
+  }
+}

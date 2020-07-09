@@ -47,8 +47,13 @@ a.read-more-symbol {
     margin-left: 1em;
 }
 
-figure.centered {
-    img {
-        margin: 1em auto;
+figure {
+    &.centered {
+        img {
+            margin: 1em auto;
+        }
+    }
+    & > img {
+        cursor: pointer;
     }
 }
