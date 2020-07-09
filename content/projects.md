@@ -75,7 +75,7 @@ Gitea is an free and open source, community driven, and self-hosted Git hosting 
 
 # Contributor
 
-# Rclone
+## Rclone
 
 From the website:
 
