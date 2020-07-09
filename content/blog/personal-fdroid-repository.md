@@ -9,8 +9,6 @@ tags:
 include_toc: true
 ---
 
-![Screenshot on Phone](/res/large/personal-fdroid-repo/screenshot-1.png)
-
 On my Android phone, most of the apps installed are open source ones installed from the [F-Droid](https://f-droid.org) repository.
 One of these apps that I use everyday is [NewPipe](https://github.com/teamnewpipe/newpipe), an <cite href="https://github.com/teamnewpipe/newpipe">libre lightweight streaming front-end</cite>, mainly used for watching Youtube.
 
@@ -61,7 +59,7 @@ I have a self-hosted instance of the proprietary version of Drone CI that I use 
 
 I already had a way to publish websites on a subdomain from a CI run set up. 
 
-![Drone CI Screenshot](/res/large/personal-fdroid-repo/fdroid-drone.png)
+{{< figure src="/res/large/personal-fdroid-repo/fdroid-drone.png" alt="Drone CI Screenshot" class="centered" >}}
 
 The CI is set up to run 4 main steps and runs every night to check for updates to apps in the repo.
 
@@ -84,6 +82,10 @@ After downloading current versions of all the apps, the apps are deduplicated us
 The final step is to push the new repo to the host using [Rclone](https://github.com/rclone/rclone).
 
 ### Final Words
+
+In the end, this is what I ended up with: 
+
+{{< figure src="/res/large/personal-fdroid-repo/screenshot-1.png" alt="Screenshot on Phone" class="centered" >}}
 
 The funny thing at the end of all this was that it turns out there is already an F-Droid repo by the NewPipe developers that is updated faster then the official F-Droid repo. The repo is not yet public but you can ask around on the NewPipe IRC and they'll give it to you.
 The main problem I was attempting to address by creating my own F-Droid Repo could have been addressed in a way that was much easier but it was still a very nice learning experience.
