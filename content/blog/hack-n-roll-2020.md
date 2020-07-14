@@ -13,11 +13,12 @@ Recently, I had the opportunity to go to [Hack & Roll 2020](https://hacknroll.nu
 
 So first thing's first, what did we make? We made a browser extension called Scrapdash. The repository for it can be found [here](https://github.com/gary-kim/scrapdash) and the Devpost can be found [here](https://devpost.com/software/scrapdash).
 
-![Scrapdash Screenshot 1](/res/large/hack-n-roll-2020/scrapdash-1.jpg)
+{{< figure src="/res/large/hack-n-roll-2020/scrapdash-1.jpg" alt="Scrapdash Screenshot 1" class="centered" >}}
 
-![Scrapdash Screenshot 2](/res/large/hack-n-roll-2020/scrapdash-2.jpg)
+{{< figure src="/res/large/hack-n-roll-2020/scrapdash-2.jpg" alt="Scrapdash Screenshot 2" class="centered" >}}
 
-![Scrapdash Screenshot 3](/res/large/hack-n-roll-2020/scrapdash-3.jpg)
+{{< figure src="/res/large/hack-n-roll-2020/scrapdash-3.jpg" alt="Scrapdash Screenshot 3" class="centered" >}}
+
 
 ### Scrapdash
 
@@ -71,4 +72,4 @@ node main.js &
 
 You can then set up your Scrapdash server url and shared secret in the `Remotes` tab of your Scrapdash page.
 
-![Scrapdash Remotes Page](/res/large/hack-n-roll-2020/scrapdash-remotes.png)
+{{< figure src="/res/large/hack-n-roll-2020/scrapdash-remotes.png" alt="Scrapdash Remotes Page" class="centered" >}}
