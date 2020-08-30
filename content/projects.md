@@ -23,9 +23,15 @@ SAS Powerschool Enhancement Suite is a free and open source extension for Firefo
 | :---: | :---: | :---: |
 | {{< figure src="/res/large/projects/saspes/1.png" alt="Main Screenshot" class="centered" >}} | {{< figure src="/res/large/projects/saspes/2.png" alt="Second Screenshot" class="centered" >}} | {{< figure src="/res/large/projects/saspes/3.png" alt="Third Screenshot" class="centered" >}}
 
+---
 
+## Go NC Talk
 
+Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made primarily to be used by Matterbridge but is designed to be able to be used in any Go software.
 
+* License: **Apache-2.0**
+* Import Path: `gomod.garykim.dev/nc-talk`
+* GitHub Project: <https://github.com/gary-kim/go-nc-talk>
 
 ---
 ## Riot Chat for Nextcloud
@@ -90,3 +96,12 @@ From the website:
 * License: **MIT**
 * GitHub Project: <https://github.com/rclone/rclone>
 * Website: <https://rclone.org>
+
+## Matterbridge
+
+From the GitHub repo:
+
+> bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocketchat, steam, twitch, ssh-chat, zulip, whatsapp, keybase, matrix, microsoft teams, nextcloud and more with REST API (mattermost not required!) 
+
+* License: **Apache-2.0**
+* GitHub Project: <https://github.com/42wim/matterbridge>
