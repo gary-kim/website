@@ -18,6 +18,10 @@ Relevant links:
 - [Firefox Extension Download](https://github.com/sas-fossdev/saspes/releases)
 - [Chrome Web Store Entry](https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk)
 
+|       |       |       |       |
+| :---: | :---: | :---: | :---: |
+| {{< figure src="/res/large/projects/saspes/1.png" alt="Main Screenshot" class="centered" >}} | {{< figure src="/res/large/projects/saspes/2.png" alt="Second Screenshot" class="centered" >}} | {{< figure src="/res/large/projects/saspes/3.png" alt="Third Screenshot" class="centered" >}} | {{< figure src="/res/large/passing-saspes-maintainership/image1.png" alt="Forth Screenshot" class="centered" >}}
+
 ### New Maintainer
 
 As I am no longer associated with the school, I felt that it would be better if someone that was still associated with the school continued to maintain the project. Someone that is still in touch with the students, faculty, and environment of the school would be far better suited to continue to evolve the project to serve its users best. To that end, I have passed the role of maintainer onto [Suhas Hariharan](https://github.com/suhas-13). Suhas has made several new features and fixes in the extension that many users actively use. 
