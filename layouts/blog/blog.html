@@ -23,7 +23,7 @@
         {{ .Summary }}
         {{ end }}
         </div>
-        {{ if .Truncated }}
+        {{ if or .Truncated .Description }}
         <a class="read-more-symbol" href="{{ .RelPermalink }}">Read More</a>
         {{ end }}
     </div>
