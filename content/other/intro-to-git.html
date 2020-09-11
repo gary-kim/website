@@ -50,6 +50,176 @@ and many more
 
 ***
 
+## Creating a Repo
+
+**
+
+
+#### TL;DR
+
+```bash
+mkdir reponame
+cd reponame
+git init
+```
+
+**
+
+Running the command `git init` will make the current directory that you are in a Git repository.
+
+***
+
+## Making changes and committing them
+
+**
+
+#### TL;DR
+
+Make your change then
+
+```bash
+git add -A
+git commit -m "Commit message"
+```
+
+**
+
+To make a commit, you will need to make a change, add that change to the staging area, then commit the change.
+
+**
+
+1. Make whatever changes you want
+2. Add add changes to the staging area by running `git add -A`
+3. Commit your changes with `git commit -m "Commit message"`
+
+**
+
+Typing `git log` will show you the history of commits in the repo that led up to the commit that you currently have checked out.
+
+```
+gary@gary-DESKTOP1:~/tmp/git/garykim.dev$ git log
+commit 77ce6412667724809bc040cd808829596aaf10c5 (HEAD -> master, origin/master, origin/HEAD)
+Author: Gary Kim <gary@garykim.dev>
+Date:   Thu Sep 10 23:16:43 2020 -0400
+
+    Add reveal + intro to git
+
+commit da1a347c2c9d196e53aa3704a0570428dbee8915 (messing-with-reveal)
+Author: Gary Kim <gary@garykim.dev>
+Date:   Thu Sep 10 13:23:44 2020 -0400
+
+    Add Go Nextcloud Talk library release
+
+commit 62dcd42e78ddc5b3180a1b7638102f88bca47d45
+Author: Gary Kim <gary@garykim.dev>
+Date:   Tue Sep 8 09:16:36 2020 -0400
+
+    Add images for passing-saspes-maintainership
+
+commit 69ddafa136e6ac526ca45ee5a100ab94b306c8ff
+Author: Gary Kim <gary@garykim.dev>
+Date:   Tue Sep 8 06:58:47 2020 -0400
+
+    Update date on lastest post
+
+commit 377e6ad3ca57cdb83723e07326e90dacb6e2d07c (origin/blog/saspes-maintainership, blog/saspes-maintainership)
+Author: Gary Kim <gary@garykim.dev>
+Date:   Sat Sep 5 06:57:23 2020 -0400
+
+    blog post: Passing SAS PES Mainainership
+    
+    Signed-off-by: Gary Kim <gary@garykim.dev>
+
+```
+
+**
+
+The more inquisitive among you will be asking why it is the staging area exists. You don't actually have to commit every change you made in one go. If you think it makes more sense to separate the changes you made into different commits, you can `git add` only the files you want to commit. You can even only commit some of the changes you made in a single file by using `git add -p`.
+
+***
+
+## Branches
+
+**
+
+#### TL;DR
+
+New branch with current checked out commit
+
+```
+git checkout -b branch-name
+```
+
+Checkout to another branch
+```
+git checkout branch-name
+```
+
+**
+
+Git includes the concept of branches which you can think of as different versions (or "editions") of your software. They allow for you and multiple other people to work on different features or bug fixes simultaneously without them interfering with each other.
+
+**
+
+Use `git checkout -b branch-name` to make a new branch. Once you make a new branch, you can make commits in this branch.
+
+**
+
+The main branch is called `master` by convention though some projects are changing to using `main` in order to avoid potentially causing issues by referencing a master-slave relationship.
+
+**
+
+Fun fact: `git checkout -b branch-name` is actually a shortcut for typing
+
+```
+git branch branch-name
+git checkout branch-name
+```
+
+***
+
+## Remotes
+
+**
+
+Git has a built in feature for having `remotes`. These remotes are essentially places where you can push and pull your Git repo from.
+
+**
+
+There are many different Git servers available. Some commercial, most open-source, some paid, some free, and so on.
+
+**
+
+[GitHub](https://github.com) is one of the most popular ones, especially for those making open source software.
+
+Shameless plug: I'm also going to shout out [Gitea](https://gitea.io) as I (Gary) am a maintainer for Gitea.
+
+**
+
+To download a repo to your computer from a Git server, use the following:
+
+```
+git clone clone-url
+```
+
+This will create a new directory with the repository.
+
+**
+
+You can push new commits you may have made to a branch by using the following:
+
+```
+git push origin branch-name
+```
+
+You can also add the `--set-upstream` flag so that next time you want to push this branch, you can simply use the following:
+
+```
+git push
+```
+
+***
+
 ## Internals of Git
 
 At this point, you should have everything you need to use Git in your everyday life.
@@ -93,3 +263,15 @@ The `objects` directory actually contains pretty much all the information in the
 * blob
 * tree
 * commit
+
+**
+
+The data is stored in a simple key-value format. Every file has a hash that is calculated from the file contents and extra header information. That hash is the key of the object with the value being the actual contents of the object.
+
+**
+
+The way that the objects are stored are such that they can be found by going into the directory of the first 2 characters of the hash, then the next 38 characters (the hash is always 40 characters long).
+
+For example, `00a5a73587b4d2623b73fd2a9dacff06678f2972` will be found at `.git/objects/00/a5a73587b4d2623b73fd2a9dacff06678f2972`
+
+**
