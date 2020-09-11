@@ -40,6 +40,14 @@
             }
         ]
     },
+    "outputFormats": {
+        "reveal": {
+            "baseName": "index",
+            "isPlainText": true,
+            "mediaType": "text/html",
+            "isHTML": true
+        }
+    },
     "params": {
         "description": "My thoughts, rambling, and contact info",
         "themeColor": "theme-base-0d",

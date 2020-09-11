@@ -1,0 +1,95 @@
+---
+title: "Intro to Git"
+outputs:
+- reveal
+---
+
+# Intro to Git
+by Gary Kim
+
+***
+
+### What is Git?
+
+**
+
+Git is a (distributed) version control system.
+
+**
+
+Essentially, Git keeps track of every version of your file that you have "committed". This lets you, for example, remove a change that you made that you know introduced a bug.
+
+**
+
+Git also allows multiple people to work on the same code at the same time by allowing people to make changes on their own local systems then having code to combine changes from multiple people. This process is called merging.
+
+***
+
+### Pro Git 2nd Edition
+
+A lot of the information in this presentation is from the Pro Git 2nd Edition book. If you're interested in Git after this presentation, I'd recommend reading Pro Git and the source code of Git available at <https://git.kernel.org/pub/scm/git/git.git>
+
+***
+
+### What we are covering
+
+**
+
+#### Git Porcelain Commands
+
+```bash
+git add
+git commit
+git checkout
+git branch
+git log
+git reset
+```
+
+and many more
+
+***
+
+## Internals of Git
+
+At this point, you should have everything you need to use Git in your everyday life.
+If you stay, we are going to take a deep dive into how Git stores data internally.
+
+***
+
+Take a look in one of your Git repositories, specifically, in the `.git` directory.
+
+```
+gary@gary-DESKTOP1:~/tmp/git/garykim.dev$ ls -lh .git
+total 72K
+drwxr-xr-x   2 gary gary 4.0K Dec  1  2019 branches
+-rw-r--r--   1 gary gary  517 Sep 10 23:16 COMMIT_EDITMSG
+-rw-r--r--   1 gary gary  631 Sep  5 07:14 config
+-rw-r--r--   1 gary gary   73 Dec  1  2019 description
+-rw-r--r--   1 gary gary  344 Sep  8 06:49 FETCH_HEAD
+-rw-r--r--   1 gary gary   23 Sep 10 23:16 HEAD
+drwxr-xr-x   2 gary gary 4.0K Dec 29  2019 hooks
+-rw-r--r--   1 gary gary 8.6K Sep 10 23:16 index
+drwxr-xr-x   2 gary gary 4.0K Dec  1  2019 info
+drwxr-xr-x   4 gary gary 4.0K Dec 29  2019 lfs
+drwxr-xr-x   3 gary gary 4.0K Dec  1  2019 logs
+drwxr-xr-x   3 gary gary 4.0K Dec  1  2019 modules
+drwxr-xr-x 228 gary gary 4.0K Sep 10 23:16 objects
+-rw-r--r--   1 gary gary   41 Sep  8 06:49 ORIG_HEAD
+-rw-r--r--   1 gary gary  114 Apr 26 09:14 packed-refs
+drwxr-xr-x   5 gary gary 4.0K Dec  1  2019 refs
+```
+
+Let's go through the important files and directories in here one by one
+
+***
+
+### objects
+
+**
+
+The `objects` directory actually contains pretty much all the information in the Git repo. There are 3 different types of objects:
+
+* blob
+* tree
+* commit
