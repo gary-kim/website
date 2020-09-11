@@ -13,18 +13,19 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
-		<header style="position: fixed; top: 10px; left: 10px; z-index: 1000;"><a href="/">Return Home</a></header>
+		<header style="position: fixed; top: 10px; left: 10px; z-index: 1000;"><a href="/" style="color: aliceblue !important;">Return Home</a></header>
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown data-separator="^\*\*\*" data-separator-vertical="^\*\*" data-charset="iso-8859-15">
-					<textarea data-template>
-					  {{ .Content | htmlEscape }}
-					</textarea>
+					<script type="text/template">
+					  {{ .Content | safeJS }}
+					</script>
 				</section>
 			</div>
 		</div>
-		
-		
+		{{ with .Params.bottomtext }}
+		<div class="bottomtext" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000; color: white;">{{ . }}</div>
+		{{ end }}
 		<script src="/js/dist/reveal.js/dist/reveal.js"></script>
 		<script src="/js/dist/reveal.js/plugins/markdown/markdown.js"></script>
 		<script src="/js/dist/reveal.js/plugins/highlight/highlight.js"></script>
