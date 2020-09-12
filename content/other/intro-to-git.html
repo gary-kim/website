@@ -291,6 +291,18 @@ git remote remove upstream
 
 **
 
+#### Make a change and push it to a remote
+
+The most common operation you are going to do for class is to commit a change and push it to a remote. In the default setup for Git, the following commands will work:
+
+```
+git add -A
+git commit -m "Commit message"
+git push origin <branch-name>
+```
+
+**
+
 #### Amend latest commit
 
 If you made a mistake in your last commit, you can fix your mistake then "amend" your last commit to include your fix by adding the `--amend` flag to your commit command.
@@ -329,7 +341,7 @@ git checkout <commit-hash>
 If you want to see the difference between two versions of your software, use the following command:
 
 ```
-git diff <commit-hash-1><commit-hash-2>
+git diff <commit-hash-1> <commit-hash-2>
 ```
 
 You can see the difference between your edited files and your staging area by using this command:
