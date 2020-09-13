@@ -162,7 +162,7 @@ Author: Gary Kim <gary@garykim.dev>
 Date:   Sat Sep 5 06:57:23 2020 -0400
 
     blog post: Passing SAS PES Mainainership
-    
+
     Signed-off-by: Gary Kim <gary@garykim.dev>
 
 ```
@@ -207,8 +207,8 @@ The main branch is called `master` by convention though some projects are changi
 Fun fact: `git checkout -b branch-name` is actually a shortcut for typing
 
 ```
-git branch branch-name
-git checkout branch-name
+git branch branch-name # Create a branch with the name branch-name
+git checkout branch-name # Switch to the branch named branch-name
 ```
 
 ***
@@ -227,14 +227,14 @@ There are many different Git servers available. Some commercial, most open-sourc
 
 [GitHub](https://github.com) is one of the most popular ones, especially for those making open source software.
 
-Shameless plug: I'm also going to shout out [Gitea](https://gitea.io) as I (Gary) am a maintainer for Gitea.
+Shameless plug: I'm also going to shout out [Gitea](https://gitea.io) as I am a maintainer for Gitea.
 
 **
 
 To download a repo to your computer from a Git server, use the following:
 
 ```
-git clone <clone-url>
+git clone https://github.com/gary-kim/website
 ```
 
 This will create a new directory with the repository.
@@ -312,6 +312,12 @@ git add -A
 git commit --amend
 ```
 
+If you have already pushed to your git remote, you're going to have to force push. Otherwise, your git remote will refuse to receive a commit that does have the commit it already has.
+
+```
+git push --force-with-lease
+```
+
 **
 
 #### Revert a commit
@@ -368,7 +374,7 @@ WARNING: will likely require manual changes during the process.
 
 #### Squash
 
-Git has the ability to combine multiple commits into one. 
+Git has the ability to combine multiple commits into one.
 
 ```
 git rebase -i HEAD~3
@@ -525,7 +531,7 @@ parent e9a9322d1c6f558a23e3cbaa85a2486138b7cced
 author Gary Kim <gary@garykim.dev> 1599856386 -0400
 committer Gary Kim <gary@garykim.dev> 1599856386 -0400
 gpgsig -----BEGIN PGP SIGNATURE-----
- 
+
  iMkEABMKAC8WIQTOtMFZ8Znek/pl4SWTSbWftUWUrAUCX1vfCxEcZ2FyeUBnYXJ5
  a2ltLmRldgAKCRCTSbWftUWUrN1nAgj83/UezOFGXhx3vB55Uq6I+zu32z9RgBUs
  W6Tt4e2/+cxOodAvPXTLzFvABavVgcOKDKueDN0WdSDKCP5H+2n8rgIGOJZf6iug
@@ -552,7 +558,7 @@ You may be thinking, if all data is stored in a key-value store, how does Git kn
 **
 
 ```
-$ cat refs/heads/master 
+$ cat refs/heads/master
 2833bf6d3598970b84397a800cad56b87540cc1d
 $ git cat-file -p 2833bf6d3598970b84397a800cad56b87540cc1d
 tree 8317d82ef29cb6de1873b17dc936cc83a4b85437
@@ -560,7 +566,7 @@ parent e9a9322d1c6f558a23e3cbaa85a2486138b7cced
 author Gary Kim <gary@garykim.dev> 1599856386 -0400
 committer Gary Kim <gary@garykim.dev> 1599856386 -0400
 gpgsig -----BEGIN PGP SIGNATURE-----
- 
+
  iMkEABMKAC8WIQTOtMFZ8Znek/pl4SWTSbWftUWUrAUCX1vfCxEcZ2FyeUBnYXJ5
  a2ltLmRldgAKCRCTSbWftUWUrN1nAgj83/UezOFGXhx3vB55Uq6I+zu32z9RgBUs
  W6Tt4e2/+cxOodAvPXTLzFvABavVgcOKDKueDN0WdSDKCP5H+2n8rgIGOJZf6iug
