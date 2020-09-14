@@ -121,11 +121,18 @@ To make a commit, you will need to make a change, add that change to the staging
 **
 
 1. Make whatever changes you want
-2. Add add changes to the staging area by running `git add -A`
+2. Add add changes to the staging area by running
+```
+git add -A
+```
 3. Commit your changes with
 ```
 git commit -m "Commit message"
 ```
+
+**
+
+Keep in mind that Git stores files, not directories (folders). If you want an empty directory, the convention is to place an empty file in the directory called `.gitkeep` so Git keeps a record of it.
 
 **
 
