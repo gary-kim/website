@@ -49,7 +49,7 @@
         }
     },
     "params": {
-        "description": "My thoughts, rambling, and contact info",
+        "description": "My thoughts, ramblings, and contact info",
         "themeColor": "theme-base-0d",
         "custom_css": ["main.css", "main2.css"],
         "social": {
