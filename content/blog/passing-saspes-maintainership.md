@@ -11,7 +11,7 @@ description: "SAS Powerschool Enhancement Suite, its history, and its new mainta
 
 ### What is SAS Powerschool Enhancement Suite
 
-SAS Powerschool Enhancement Suite (better known as SAS PES) is a browser extension for Firefox and Chromium-based browsers that adds many convenience features when using Powerschool at Singapore American School as a student. If you want to learn more about the project, please visit our [README](https://github.com/sas-fossdev/saspes#readme).
+SAS Powerschool Enhancement Suite (better known as SAS PES) is a browser extension for Firefox and Chromium-based browsers that adds many convenient features when using Powerschool at [Singapore American School](https://www.sas.edu.sg/) as a student. The extension was originally for use by only high school students but is now also used by middle school students and parents alike. If you want to learn more about the project, please visit our [README](https://github.com/sas-fossdev/saspes#readme).
 
 Relevant links:
 - [Source Code](https://github.com/sas-fossdev/saspes)
