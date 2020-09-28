@@ -37,15 +37,15 @@ Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made pr
 * GoDoc Documentation: <https://pkg.go.dev/gomod.garykim.dev/nc-talk>
 
 ---
-## Riot Chat for Nextcloud
+## Element for Nextcloud
 
-Riot Chat for Nextcloud is a Nextcloud App that integrates Riot.im into Nextcloud. It allows Nextcloud admins to easily install Riot for their users.
+Element for Nextcloud is a Nextcloud App that integrates Riot.im into Nextcloud. It allows Nextcloud admins to easily install and configure Element for their users and join the Matrix network.
 
 * License: **AGPL-3.0-or-later**
 
-
+* Nextcloud App Page: <https://apps.nextcloud.com/apps/riotchat>
 * GitHub Project: <https://github.com/gary-kim/riotchat>
-* Matrix Development Chat: <https://matrix.to/#/+riotchat-nextcloud:garykim.dev>
+* Matrix Development Chat: <https://matrix.to/#/#elementfornextcloud-general:garykim.dev>
 
 {{< figure src="/res/large/riotchat-for-nextcloud/main-screenshot.png" alt="Screenshot" class="centered" >}}
 
