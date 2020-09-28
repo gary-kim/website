@@ -6,11 +6,13 @@ showpagemeta: false
 postNavigation: false
 ---
 
-# My Projects (Primary Maintainer)
+# My Projects (Primary Maintainer or Creator)
 
 ## SAS Powerschool Enhancement Suite
 
 SAS Powerschool Enhancement Suite is a free and open source extension for Firefox and Chromium based browsers that enhances the experience of using Powerschool at Singapore American School.
+
+I am the creator of the project but primary maintainership has now been passed to another maintainer. [Read more here]({{< relref "/blog/passing-saspes-maintainership.md" >}}).
 
 * License: **AGPL-3.0-only**
 
@@ -32,6 +34,7 @@ Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made pr
 * License: **Apache-2.0**
 * Import Path: `gomod.garykim.dev/nc-talk`
 * GitHub Project: <https://github.com/gary-kim/go-nc-talk>
+* GoDoc Documentation: <https://pkg.go.dev/gomod.garykim.dev/nc-talk>
 
 ---
 ## Riot Chat for Nextcloud
@@ -102,6 +105,8 @@ From the website:
 From the GitHub repo:
 
 > bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocketchat, steam, twitch, ssh-chat, zulip, whatsapp, keybase, matrix, microsoft teams, nextcloud and more with REST API (mattermost not required!) 
+
+My primary addition to Matterbridge has been the addition of the `nctalk` backend that adds support for [Nextcloud Talk](https://nextcloud.com/talk/).
 
 * License: **Apache-2.0**
 * GitHub Project: <https://github.com/42wim/matterbridge>
