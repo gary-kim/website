@@ -29,7 +29,7 @@ I am the creator of the project but primary maintainership has now been passed t
 
 ## Go NC Talk
 
-Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made primarily to be used by Matterbridge but is designed to be able to be used in any Go software.
+Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made primarily to be used by [Matterbridge](#matterbridge) but is designed to be able to be used in any Go software.
 
 * License: **Apache-2.0**
 * Import Path: `gomod.garykim.dev/nc-talk`
