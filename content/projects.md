@@ -47,7 +47,12 @@ Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made pr
 * GitHub Project: <https://github.com/gary-kim/riotchat>
 * Matrix Development Chat: <https://matrix.to/#/#elementfornextcloud-general:garykim.dev>
 
-{{< figure src="/res/large/riotchat-for-nextcloud/main-screenshot.png" alt="Screenshot" class="centered" >}}
+{{< figure src="/res/large/riotchat-for-nextcloud/screenshot-2.png" alt="Screenshot" class="centered" >}}
+
+|       |       |
+| :---: | :---: |
+| {{< figure src="/res/large/riotchat-for-nextcloud/main-screenshot.png" alt="Screenshot" class="centered" >}} | {{< figure src="/res/large/riotchat-for-nextcloud/screenshot-3.png" alt="Screenshot" class="centered" >}}
+
 
 ---
 ## Open IAS Scoreboard
