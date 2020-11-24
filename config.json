@@ -25,6 +25,11 @@
                 "URL": "/contact/",
                 "Name": "Contact",
                 "weight": 30
+            },
+            {
+                "URL": "/donations/",
+                "Name": "Donate",
+                "weight": 40
             }
         ],
         "external": [
