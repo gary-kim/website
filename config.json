@@ -45,6 +45,13 @@
             }
         ]
     },
+    "mediaTypes": {
+        "text/revealmarkdown": {
+            "suffixes": [
+                "md"
+            ]
+        }
+    },
     "outputFormats": {
         "reveal": {
             "baseName": "index",
@@ -55,7 +62,7 @@
         "revealmarkdown": {
             "basename": "index",
             "isPlainText": true,
-            "mediaType": "text/html",
+            "mediaType": "text/revealmarkdown",
             "isHTML": false,
             "path": "/markdown/"
         }
