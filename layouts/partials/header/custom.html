@@ -26,3 +26,7 @@
 <script src="/js/dist/viewer.min.js"></script>
 <script src="/js/imageviewer.js"></script>
 <!-- /Load Custom JS -->
+
+<!-- Don't index if noindex is true -->
+{{ if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
+<!-- /Don't index if noindex is true -->

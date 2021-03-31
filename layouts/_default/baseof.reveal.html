@@ -18,10 +18,7 @@
 		<header style="position: fixed; top: 10px; left: 10px; z-index: 1000;"><a href="/" style="color: aliceblue !important;">Return Home</a></header>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown data-separator="^\*\*\*" data-separator-vertical="^\*\*" data-charset="iso-8859-15">
-					<script type="text/template">
-					  {{ .Content | safeJS }}
-					</script>
+				<section data-markdown="/markdown{{ .RelPermalink }}" data-separator="^\*\*\*" data-separator-vertical="^\*\*" data-seperator-notes="^Note:" data-noescape>
 				</section>
 			</div>
 		</div>
@@ -31,6 +28,9 @@
 		<script src="/js/dist/reveal.js/dist/reveal.js"></script>
 		<script src="/js/dist/reveal.js/plugins/markdown/markdown.js"></script>
 		<script src="/js/dist/reveal.js/plugins/highlight/highlight.js"></script>
+		<script src="/js/dist/reveal.js/plugins/zoom/zoom.js"></script>
+		<script src="/js/dist/reveal.js/plugins/notes/notes.js"></script>
+		<script src="/js/dist/reveal.js/plugins/search/search.js"></script>
 		<script>
 			Reveal.initialize({
 				hash: true,
@@ -38,9 +38,8 @@
 				controlsLayout: 'bottom-right',
 				progress: true,
 				embedded: false,
-				plugins: [ RevealMarkdown, RevealHighlight ],
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealSearch ],
 			});
 		</script>
-		
 	</body>
 </html>

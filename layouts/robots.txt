@@ -4,6 +4,6 @@ Disallow:
 {{ else }}
 Disallow: /
 {{ end }}
-
+Disallow: /markdown/
 {{ range .Data.Pages }}{{ if .Params.noindex }}Disallow: {{.RelPermalink}}
 {{ end }}{{ end }}

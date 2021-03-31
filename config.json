@@ -51,6 +51,13 @@
             "isPlainText": true,
             "mediaType": "text/html",
             "isHTML": true
+        },
+        "revealmarkdown": {
+            "basename": "index",
+            "isPlainText": true,
+            "mediaType": "text/html",
+            "isHTML": false,
+            "path": "/markdown/"
         }
     },
     "params": {
