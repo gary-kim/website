@@ -15,7 +15,7 @@
 		{{ partial "header/custom.html" . }}
 	</head>
 	<body>
-		<header style="position: fixed; top: 10px; left: 10px; z-index: 1000;"><a href="/" style="color: aliceblue !important;">Return Home</a></header>
+		<header style="position: fixed; top: 10px; left: 10px; z-index: 1000;"><a href="/" style="color: aliceblue !important;" id="return-home-button">Return Home</a></header>
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown="{{ with .OutputFormats.Get "revealmarkdown" }}{{ .Permalink }}{{ end }}" data-separator="^\*\*\*" data-separator-vertical="^\*\*" data-seperator-notes="^Note:" data-noescape>
@@ -40,6 +40,9 @@
 				embedded: false,
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealSearch ],
 			});
+			if ((new URL(window.location)).searchParams.has("print-pdf")) {
+				document.getElementById("return-home-button").style.visibility = "hidden";
+			}
 		</script>
 	</body>
 </html>
