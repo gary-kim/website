@@ -34,3 +34,4 @@ I am also on {{<social "gitlab" >}} Gitlab {{</social>}}.
 
 You can contact me on {{<social "discord" >}} Discord {{</social>}} ({{<social "discord" />}}) but keep in mind, I will be very slow to respond and I also likely will not respond if I don't know you.
 
+Amateur Radio Callsign: KD2YMU
