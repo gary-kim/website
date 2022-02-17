@@ -39,6 +39,10 @@
 				progress: true,
 				embedded: false,
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealSearch ],
+				slideNumber: function (slide) {
+                     let indices = Reveal.getIndices(slide);
+                     return [ indices.h + "." + (indices.v || 0) + " " + (Reveal.getProgress()* 100).toFixed(0).padStart(2, '0') + "%"];
+                 },
 			});
 			if ((new URL(window.location)).searchParams.has("print-pdf")) {
 				document.getElementById("return-home-button").style.visibility = "hidden";
