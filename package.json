@@ -18,7 +18,7 @@
   "homepage": "https://github.com/gary-kim/website#readme",
   "devDependencies": {},
   "dependencies": {
-    "reveal.js": "^4.1.0",
-    "viewerjs": "^1.9.0"
+    "reveal.js": "^4.3.1",
+    "viewerjs": "^1.10.5"
   }
 }
