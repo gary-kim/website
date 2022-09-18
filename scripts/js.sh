@@ -17,6 +17,7 @@ cp $SCRIPTPATH/../node_modules/reveal.js/plugin/markdown/markdown.js $SCRIPTPATH
 
 mkdir -p $SCRIPTPATH/../static/js/dist/reveal.js/plugins/highlight
 cp $SCRIPTPATH/../node_modules/reveal.js/plugin/highlight/highlight.js $SCRIPTPATH/../static/js/dist/reveal.js/plugins/highlight/highlight.js
+cp $SCRIPTPATH/../node_modules/reveal.js/plugin/highlight/monokai.css $SCRIPTPATH/../static/js/dist/reveal.js/plugins/highlight/monokai.css
 
 mkdir -p $SCRIPTPATH/../static/js/dist/reveal.js/plugins/notes
 cp $SCRIPTPATH/../node_modules/reveal.js/plugin/notes/notes.js $SCRIPTPATH/../static/js/dist/reveal.js/plugins/notes/notes.js

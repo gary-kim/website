@@ -85,7 +85,8 @@
         "include_toc": false,
         "UtterancesRepo": "gary-kim/blog-utterances",
         "UtterancesIssueTerm": "pathname",
-        "UtterancesTheme": "github-light"
+        "UtterancesTheme": "github-light",
+        "mainSections": ["blog"]
     },
     "markup": {
         "goldmark": {
