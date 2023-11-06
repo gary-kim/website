@@ -1,1 +1,1 @@
-{{ .RawContent | rawHTML }}
+{{ .RawContent }}

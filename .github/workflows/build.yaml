@@ -1,0 +1,48 @@
+name: Publish website
+
+on:
+  push:
+    branches:
+      - "master"
+
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Run setup script
+        run: make static/js/dist
+
+      - name: Run Hugo
+        uses: crazy-max/ghaction-hugo@v3
+        with:
+          version: latest
+          extended: true
+          args: --cleanDestinationDir --minify
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
