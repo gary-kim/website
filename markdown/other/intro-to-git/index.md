@@ -1,0 +1,601 @@
+
+# Intro to Git
+by Gary Kim
+
+***
+
+### What is Git?
+
+**
+
+Git is a (distributed) version control system.
+
+**
+
+Essentially, Git keeps track of every version of your file that you have "committed". This lets you, for example, remove a change that you made that you know introduced a bug.
+
+**
+
+Git also allows multiple people to work on the same code at the same time by allowing people to make changes on their own local systems then having code to combine changes from multiple people. This process is called merging.
+
+***
+
+### Pro Git 2nd Edition
+
+A lot of the information in this presentation is from the Pro Git 2nd Edition book. If you're interested in Git after this presentation, I'd recommend reading Pro Git and the source code of Git available at <https://git.kernel.org/pub/scm/git/git.git>
+
+***
+
+### What we are covering
+
+**
+
+#### Git Porcelain Commands
+
+```bash
+git add
+git commit
+git checkout
+git branch
+git log
+git reset
+```
+
+and many more
+
+***
+
+## Creating a Repo
+
+**
+
+
+#### TL;DR
+
+```bash
+mkdir reponame
+cd reponame
+git init
+```
+
+**
+
+Running the command `git init` will make the current directory that you are in a Git repository.
+
+***
+
+## Status
+
+**
+
+One of the most useful commands in Git
+
+```
+git status
+```
+
+This will show you the current state of your Git repo and tells you how to do things that you may be looking to do.
+
+**
+
+#### Example output
+
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   content/other/intro-to-git.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+***
+
+## Making changes and committing them
+
+**
+
+#### TL;DR
+
+Make your change then
+
+```bash
+git add -A
+git commit -m "Commit message"
+```
+
+**
+
+To make a commit, you will need to make a change, add that change to the staging area, then commit the change.
+
+**
+
+1. Make whatever changes you want
+2. Add add changes to the staging area by running
+```
+git add -A
+```
+3. Commit your changes with
+```
+git commit -m "Commit message"
+```
+
+**
+
+Keep in mind that Git stores files, not directories (folders). If you want an empty directory, the convention is to place an empty file in the directory called `.gitkeep` so Git keeps a record of it.
+
+**
+
+Typing `git log` will show you the history of commits in the repo that led up to the commit that you currently have checked out.
+
+```Text
+gary@gary-DESKTOP1:~/tmp/git/garykim.dev$ git log
+commit 77ce6412667724809bc040cd808829596aaf10c5 (HEAD -> master, origin/master, origin/HEAD)
+Author: Gary Kim <gary@garykim.dev>
+Date:   Thu Sep 10 23:16:43 2020 -0400
+
+    Add reveal + intro to git
+
+commit da1a347c2c9d196e53aa3704a0570428dbee8915 (messing-with-reveal)
+Author: Gary Kim <gary@garykim.dev>
+Date:   Thu Sep 10 13:23:44 2020 -0400
+
+    Add Go Nextcloud Talk library release
+
+commit 62dcd42e78ddc5b3180a1b7638102f88bca47d45
+Author: Gary Kim <gary@garykim.dev>
+Date:   Tue Sep 8 09:16:36 2020 -0400
+
+    Add images for passing-saspes-maintainership
+
+commit 69ddafa136e6ac526ca45ee5a100ab94b306c8ff
+Author: Gary Kim <gary@garykim.dev>
+Date:   Tue Sep 8 06:58:47 2020 -0400
+
+    Update date on lastest post
+
+commit 377e6ad3ca57cdb83723e07326e90dacb6e2d07c (origin/blog/saspes-maintainership, blog/saspes-maintainership)
+Author: Gary Kim <gary@garykim.dev>
+Date:   Sat Sep 5 06:57:23 2020 -0400
+
+    blog post: Passing SAS PES Mainainership
+
+    Signed-off-by: Gary Kim <gary@garykim.dev>
+
+```
+
+**
+
+The more inquisitive among you will be asking why it is the staging area exists. You don't actually have to commit every change you made in one go. If you think it makes more sense to separate the changes you made into different commits, you can `git add` only the files you want to commit. You can even only commit some of the changes you made in a single file by using `git add -p`.
+
+***
+
+## Branches
+
+**
+
+#### TL;DR
+
+New branch with current checked out commit
+
+```
+git checkout -b branch-name
+```
+
+Checkout to another branch
+```
+git checkout branch-name
+```
+
+**
+
+Git includes the concept of branches which you can think of as different versions (or "editions") of your software. They allow for you and multiple other people to work on different features or bug fixes simultaneously without them interfering with each other.
+
+**
+
+Use `git checkout -b branch-name` to make a new branch. Once you make a new branch, you can make commits in this branch.
+
+**
+
+The main branch is called `master` by convention though some projects are changing to using `main` in order to avoid potentially causing issues by referencing a master-slave relationship.
+
+**
+
+Fun fact: `git checkout -b branch-name` is actually a shortcut for typing
+
+```
+git branch branch-name # Create a branch with the name branch-name
+git checkout branch-name # Switch to the branch named branch-name
+```
+
+***
+
+## Remotes
+
+**
+
+Git has a built in feature for having `remotes`. These remotes are essentially places where you can push and pull your Git repo from.
+
+**
+
+There are many different Git servers available. Some commercial, most open-source, some paid, some free, and so on.
+
+**
+
+[GitHub](https://github.com) is one of the most popular ones, especially for those making open source software.
+
+Shameless plug: I'm also going to shout out [Gitea](https://gitea.io) as I am a maintainer for Gitea.
+
+**
+
+To download a repo to your computer from a Git server, use the following:
+
+```
+git clone https://github.com/gary-kim/website
+```
+
+This will create a new directory with the repository.
+
+**
+
+You can push new commits you may have made to a branch by using the following:
+
+```
+git push origin branch-name [--set-upstream]
+```
+
+You can also add the `--set-upstream` flag so that next time you want to push this branch, you can simply use the following:
+
+```
+git push
+```
+
+**
+
+#### Pull Changes
+
+To pull new changes into your current branch from the remote, run the following command:
+
+```
+git pull
+```
+
+**
+
+#### Fetch Changes
+
+If you want to only fetch changes and leave your local branch untouched, use the following:
+
+```
+git fetch
+```
+
+**
+
+#### Edit remotes
+
+Editing remotes is a relatively advanced thing to do but here are the basics:
+
+```
+git remote rename origin upstream
+git remote add origin https://git.garykim.dev/gary-kim/at-psychology-writeup
+git remote remove upstream
+```
+
+***
+
+## Common Operations
+
+**
+
+#### Make a change and push it to a remote
+
+The most common operation you are going to do for class is to commit a change and push it to a remote. In the default setup for Git, the following commands will work:
+
+```
+git add -A
+git commit -m "Commit message"
+git push origin <branch-name>
+```
+
+**
+
+#### Amend latest commit
+
+If you made a mistake in your last commit, you can fix your mistake then "amend" your last commit to include your fix by adding the `--amend` flag to your commit command.
+
+```
+git add -A
+git commit --amend
+```
+
+If you have already pushed to your git remote, you're going to have to force push. Otherwise, your git remote will refuse to receive a commit that does have the commit it already has.
+
+```
+git push --force-with-lease
+```
+
+**
+
+#### Revert a commit
+
+If you need to undo a change that you made, you can use this command:
+
+```
+git revert <commit-hash>
+```
+
+This will add a revert commit that undoes the changes that were made in that commit. Future changes will be left alone.
+
+**
+
+#### Checkout a commit
+
+If you want to see what your repo was like after a specific commit, use the following command:
+
+```
+git checkout <commit-hash>
+```
+
+**
+
+#### Diff a commit
+
+If you want to see the difference between two versions of your software, use the following command:
+
+```
+git diff <commit-hash-1> <commit-hash-2>
+```
+
+You can see the difference between your edited files and your staging area by using this command:
+
+```
+git diff [--cached]
+```
+
+Add `--cached` to see the difference between your staging area and your latest commit.
+
+**
+
+#### Rebase
+
+You can use the rebase command to reapply the changes you made on top of another version of the repository. This is useful for if you have unintentionally allowed your local branch and remote branch to diverge, for example.
+
+```
+git rebase origin/master
+```
+
+WARNING: will likely require manual changes during the process.
+
+**
+
+#### Squash
+
+Git has the ability to combine multiple commits into one.
+
+```
+git rebase -i HEAD~3
+```
+
+with '3' being the number of commits behind you want to edit.
+
+Keep in mind, you are changing your repository history by doing this and will need to force push if you already force pushed your previous changes to a remote.
+
+Continued on the next page
+
+**
+
+#### Interactive Rebase
+
+While the last slide showed how to squash commits, the same command is used for when you want to edit a part of your Git history for one reason or another.
+
+WARNING: if you accidentally committed a secret and pushed it, changing history and force pushing it will not remove the data from your remote. If this happens, consider the secret no longer secret.
+
+***
+
+## Internals of Git
+
+At this point, you should have everything you need to use Git in your everyday life.
+If you stay, we are going to take a deep dive into how Git stores data internally.
+
+***
+
+Take a look in one of your Git repositories, specifically, in the `.git` directory.
+
+```
+gary@gary-DESKTOP1:~/tmp/git/garykim.dev$ ls -lh .git
+total 72K
+drwxr-xr-x   2 gary gary 4.0K Dec  1  2019 branches
+-rw-r--r--   1 gary gary  517 Sep 10 23:16 COMMIT_EDITMSG
+-rw-r--r--   1 gary gary  631 Sep  5 07:14 config
+-rw-r--r--   1 gary gary   73 Dec  1  2019 description
+-rw-r--r--   1 gary gary  344 Sep  8 06:49 FETCH_HEAD
+-rw-r--r--   1 gary gary   23 Sep 10 23:16 HEAD
+drwxr-xr-x   2 gary gary 4.0K Dec 29  2019 hooks
+-rw-r--r--   1 gary gary 8.6K Sep 10 23:16 index
+drwxr-xr-x   2 gary gary 4.0K Dec  1  2019 info
+drwxr-xr-x   4 gary gary 4.0K Dec 29  2019 lfs
+drwxr-xr-x   3 gary gary 4.0K Dec  1  2019 logs
+drwxr-xr-x   3 gary gary 4.0K Dec  1  2019 modules
+drwxr-xr-x 228 gary gary 4.0K Sep 10 23:16 objects
+-rw-r--r--   1 gary gary   41 Sep  8 06:49 ORIG_HEAD
+-rw-r--r--   1 gary gary  114 Apr 26 09:14 packed-refs
+drwxr-xr-x   5 gary gary 4.0K Dec  1  2019 refs
+```
+
+Let's go through the important files and directories in here one by one
+
+**
+
+From Pro Git 2nd Edition
+
+
+![](https://git-scm.com/book/en/v2/images/data-model-4.png)
+
+***
+
+### objects
+
+**
+
+The `objects` directory actually contains pretty much all the information in the Git repo. There are 3 different types of objects:
+
+* blob
+* tree
+* commit
+
+**
+
+The data is stored in a simple key-value format. Every file has a hash that is calculated from the file contents and extra header information. That hash is the key of the object with the value being the actual contents of the object.
+
+**
+
+The way that the objects are stored are such that they can be found by going into the directory of the first 2 characters of the hash, then the next 38 characters (the hash is always 40 characters long).
+
+For example, `00a5a73587b4d2623b73fd2a9dacff06678f2972` will be found at `.git/objects/00/a5a73587b4d2623b73fd2a9dacff06678f2972`
+
+**
+
+If you know the hash of an object, you can print out the contents of the object.
+
+```
+$ git cat-file -p 73ab8769f93bbbd5c4b69d33c2fa86329d05bc85
+public/
+resources/
+```
+
+**
+
+***
+
+### objects: blob
+
+**
+
+The contents of the files in a repository are stored in blob objects. Some header information about the object and the file contents are appended together then compressed using zlib for storage.
+
+***
+
+### objects: tree
+
+**
+
+Trees in Git can be thought of like a directory. They contain references to other trees and blobs that they contain.
+
+**
+
+From Pro Git 2nd Edition
+
+![](https://git-scm.com/book/en/v2/images/data-model-1.png)
+
+**
+
+```
+$ git cat-file -p b96b39d54ef0cd5b042a2bd1f7fdf461461057e2
+100644 blob eef4a0d63511343e423e45cac5863494932ea3e8	.drone.yml
+100644 blob f8a215faf3673dc7547e03b7f526a318cfbacaf1	.gitattributes
+040000 tree 2d3531561b3ac0aec7c61225e074187542530f79	.github
+100644 blob 73ab8769f93bbbd5c4b69d33c2fa86329d05bc85	.gitignore
+100644 blob 6ee8409d3f0750348e6ebb9f163ee15d4825c8b6	.gitmodules
+100644 blob d7caa21062663531e2f1bef2c67f0689128526dc	LICENSE
+100644 blob da7e07962e7fa4a318e5f7d478b74db403bcad3b	Makefile
+100644 blob dcd04779a0ee991ca481365a07b77eed62b3f6a1	README.md
+040000 tree 7d69efe920574b660dbf45fe91277ce8ff5532ec	archetypes
+040000 tree 4eeabaaab6cdeeb130af7886205e0235cbd85192	assets
+100644 blob 76d82befa072fbbf8a953bcac7f5707835bda1de	config.json
+040000 tree 0b73510f573d8d5ba2c8efdf6373a84f624394c2	content
+040000 tree b3f02be5f73b6bc45dcde59687a6a8ce4c808060	layouts
+040000 tree a89038e2a1db7d1f572e5a94ef34835d74673953	scripts
+040000 tree 4c4d10069497d25a226a37b423292c381711ed6f	static
+040000 tree 14b3e6c98ac4b599e463dda8b5b0562bcaaaf347	themes
+```
+
+***
+
+## Objects: Commit
+
+**
+
+Commit objects refer to a commit. They contain information about the commit, the commit that came before it, and points to a tree that points to the correct versions of all the files in the repository.
+
+**
+
+```
+$ git cat-file -p 2833bf6d3598970b84397a800cad56b87540cc1d
+6d3598970b84397a800cad56b87540cc1d
+tree 8317d82ef29cb6de1873b17dc936cc83a4b85437
+parent e9a9322d1c6f558a23e3cbaa85a2486138b7cced
+author Gary Kim <gary@garykim.dev> 1599856386 -0400
+committer Gary Kim <gary@garykim.dev> 1599856386 -0400
+gpgsig -----BEGIN PGP SIGNATURE-----
+
+ iMkEABMKAC8WIQTOtMFZ8Znek/pl4SWTSbWftUWUrAUCX1vfCxEcZ2FyeUBnYXJ5
+ a2ltLmRldgAKCRCTSbWftUWUrN1nAgj83/UezOFGXhx3vB55Uq6I+zu32z9RgBUs
+ W6Tt4e2/+cxOodAvPXTLzFvABavVgcOKDKueDN0WdSDKCP5H+2n8rgIGOJZf6iug
+ wqgrdlH4x5GrAQHuB0EDWQAARCD1TUz+MOqBz5BxOdK7CU2H+OlDMXWLCtrUKx3c
+ J57/VsdSO+EFh6Y=
+ =X+LW
+ -----END PGP SIGNATURE-----
+
+Fix angle brackets in reveal
+```
+
+**
+
+Because the hash of the commit is based on the hash of the previous commit and the tree's hash which is based on the exact layout and contents of the repository, no change can be made in a repository's history without changing these hashes. A change in a commit hash is very obvious to anyone else that may be working with the project.
+
+***
+
+## refs
+
+**
+
+You may be thinking, if all data is stored in a key-value store, how does Git know where to start for any operation. This is where `refs` come into play. Inside the `refs` directory, you will find references to keys to look in the key value store for.
+
+**
+
+```
+$ cat refs/heads/master
+2833bf6d3598970b84397a800cad56b87540cc1d
+$ git cat-file -p 2833bf6d3598970b84397a800cad56b87540cc1d
+tree 8317d82ef29cb6de1873b17dc936cc83a4b85437
+parent e9a9322d1c6f558a23e3cbaa85a2486138b7cced
+author Gary Kim <gary@garykim.dev> 1599856386 -0400
+committer Gary Kim <gary@garykim.dev> 1599856386 -0400
+gpgsig -----BEGIN PGP SIGNATURE-----
+
+ iMkEABMKAC8WIQTOtMFZ8Znek/pl4SWTSbWftUWUrAUCX1vfCxEcZ2FyeUBnYXJ5
+ a2ltLmRldgAKCRCTSbWftUWUrN1nAgj83/UezOFGXhx3vB55Uq6I+zu32z9RgBUs
+ W6Tt4e2/+cxOodAvPXTLzFvABavVgcOKDKueDN0WdSDKCP5H+2n8rgIGOJZf6iug
+ wqgrdlH4x5GrAQHuB0EDWQAARCD1TUz+MOqBz5BxOdK7CU2H+OlDMXWLCtrUKx3c
+ J57/VsdSO+EFh6Y=
+ =X+LW
+ -----END PGP SIGNATURE-----
+
+Fix angle brackets in reveal
+```
+
+**
+
+This is actually all branches are. `refs` to different commits.
+
+***
+
+## Packfiles
+
+**
+
+You would have noticed that because of the way Git stores data, the smallest change to a file results in the file being resaved again. This takes up a lot of storage. Packfiles exist to fix this problem.
+
+**
+
+Packfiles are files that each store many objects. Packfiles are capable of storing diffs between versions rather than storing entire files. This is how Git can work on large repositories without quickly growing out of control.
+
+***
+
+If you want to learn more, read the [Git Source Code](https://git.kernel.org/pub/scm/git/git.git) and [Pro Git 2nd Edition](https://git-scm.com/book/en/v2)!
+
