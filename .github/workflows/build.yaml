@@ -19,7 +19,7 @@ jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           lfs: true
@@ -34,7 +34,7 @@ jobs:
       - name: Run Hugo
         uses: crazy-max/ghaction-hugo@v3
         with:
-          version: latest
+          version: v0.103.1
           extended: true
           args: --cleanDestinationDir --minify
 
