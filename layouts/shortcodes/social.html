@@ -88,3 +88,8 @@
 {{ with $.Inner }}{{ . }}{{ else }}{{ . }}{{ end }}{{ if not ($.Get 0) }}<br />{{ end }}
 {{ end }}
 {{ end }}
+{{ with .Site.Params.social.sourcehut }}
+{{ if or (not ( $.Get 0)) (eq ($.Get 0) "sourcehut") }}
+<a href="https://sr.ht/~{{.}}" rel="me" target="_blank" rel="noopener noreferrer">{{ with $.Inner }}{{ . }}{{ else }}~{{ . }}{{ end }}</a>{{ if not ($.Get 0) }}<br />{{ end }}
+{{ end }}
+{{ end }}
