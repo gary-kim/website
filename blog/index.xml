@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Gary Kim: Website</title><link>https://garykim.dev/blog/</link><description>Recent content in Blogs on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://garykim.dev/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Nextcloud Talk Library Release</title><link>https://garykim.dev/blog/2020/09/10/go-nextcloud-talk-library-release/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/09/10/go-nextcloud-talk-library-release/</guid><description>&lt;p>If you want to interact with &lt;a href="https://nextcloud.com/talk">Nextcloud Talk&lt;/a> easily in a Go project, you can use the Go Nextcloud Talk library.&lt;/p>
+&lt;p>You can find the godoc documentation &lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk?tab=doc">here&lt;/a>.&lt;/p>
+&lt;p>Relevant Links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gary-kim/go-nc-talk">Source Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk?tab=doc">godoc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h4 id="add-the-library-to-your-project">Add the library to your project&lt;/h4>
+&lt;pre tabindex="0">&lt;code>GO111MODULE=on go get gomod.garykim.dev/nc-talk
+&lt;/code>&lt;/pre>&lt;h3 id="current-usage">Current Usage&lt;/h3>
+&lt;p>&lt;a href="https://github.com/42wim/matterbridge">Matterbridge&lt;/a> from version 1.18.0 onwards includes support for Nextcloud Talk. This is done using the Go Nextcloud Talk library.&lt;/p></description></item><item><title>SAS Powerschool Enhancement Suite has a new maintainer</title><link>https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/</guid><description>&lt;h3 id="what-is-sas-powerschool-enhancement-suite">What is SAS Powerschool Enhancement Suite&lt;/h3>
+&lt;p>SAS Powerschool Enhancement Suite (better known as SAS PES) is a browser extension for Firefox and Chromium-based browsers that adds many convenient features when using Powerschool at &lt;a href="https://www.sas.edu.sg/">Singapore American School&lt;/a> as a student. The extension was originally for use by only high school students but is now also used by middle school students and parents alike. If you want to learn more about the project, please visit our &lt;a href="https://github.com/sas-fossdev/saspes#readme">README&lt;/a>.&lt;/p>
+&lt;p>Relevant links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sas-fossdev/saspes">Source Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sas-fossdev/saspes/releases">Firefox Extension Download&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk">Chrome Web Store Entry&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/1.png"
+alt="Main Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/2.png"
+alt="Second Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/3.png"
+alt="Third Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/passing-saspes-maintainership/image1.png"
+alt="Forth Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="new-maintainer">New Maintainer&lt;/h3>
+&lt;p>As I am no longer associated with the school, I felt that it would be better if someone that was still associated with the school continued to maintain the project. Someone that is still in touch with the students, faculty, and environment of the school would be far better suited to continue to evolve the project to serve its users best. To that end, I have passed the role of maintainer onto &lt;a href="https://github.com/suhas-13">Suhas Hariharan&lt;/a>. Suhas has made several new features and fixes in the extension that many users actively use.&lt;/p>
+&lt;p>I will still be available as a co-maintainer to advise and help fix issues but Suhas is now the primary maintainer.&lt;/p>
+&lt;h3 id="some-history">Some History&lt;/h3>
+&lt;p>Developing this extension has been quite the journey for me. I started the project while learning Javascript and the project evolved with me. As I learned more about Javascript and the tooling available, the project gradually became more capable and more complex in both its code and its tooling.&lt;/p>
+&lt;p>The idea for the extension was originally by &lt;a href="https://tcode2k16.github.io/blog/">Alan Chang&lt;/a> (&lt;a href="https://twitter.com/tcode2k16">@tcode2k16&lt;/a>), a great friend of mine. The idea for the extension at first was rather simple. There was no way to view the current semester GPA in Powerschool but everyone knew how to calculate it themselves. That calculation was simple so why not do it automatically and put it in the page using an extension? Alan quickly made a prototype of this idea.&lt;/p>
+&lt;p>I was very intrigued when I saw the extension and the idea to improve the experience of students using extensions. I started working on an extension to do something similar for Schoology, another service that Singapore American Students used (You can still see the remnants of this attempt &lt;a href="https://github.com/gary-kim/sasses">here&lt;/a>). After a while, it became clear that maintaining this extension was going to be painful due to the way that Schoology is built, especially with my limited knowledge in Javascript at the time. I gave up on the idea for a bit thinking that I&amp;rsquo;d come back to it later. I asked Alan at this point if he was planning to release the extension publicly and, if not, if I could use his idea for a Powerschool extension and try to develop it further. He said he&amp;rsquo;d be fine with me developing his idea further so I got to work.&lt;/p>
+&lt;p>I came up with some ideas about features that I thought people would find useful and implemented a few basic ones. I quickly got a few friends to be beta testers for my extension. They would provide me feedback in the form of ideas and bugs. Their help, ideas, and bug reports were invaluable. I implemented many of these ideas and continued to improve upon features already in the extension with the help of my beta testers such as Sanjo Ray. Thank you for helping make the project so much more successful by giving valuable feedback.&lt;/p>
+&lt;p>The extension was then publicly released in November of 2018. News of the release spread by word of mouth between students and within 2 weeks, more than 100 people had installed the extension. Within half a year, more than half the students in the high school had the extension and it became more common to see students with the extension than without.&lt;/p>
+&lt;p>The project kept evolving from that point as I learned more about Javascript, its tooling, and its community. I learned about the more modern Javascript features I could use if I migrated to using &lt;a href="https://babeljs.io/">Babel&lt;/a>, so I did. I learned about how &lt;a href="https://webpack.js.org/">Webpack&lt;/a> could simplify my dependency situation, so the project migrated to it. I learned how to use &lt;a href="https://vuejs.org">Vue&lt;/a> as I got involved in the &lt;a href="https://nextcloud.com">Nextcloud&lt;/a> project, so large parts of the extension was migrated to &lt;a href="https://vuejs.org">VueJS&lt;/a>.&lt;/p>
+&lt;p>In early 2019, I realized that development could be much quicker and better with more people involved so started working to make the project more inviting to potential contributors. Suhas was one of the people that started contributing significantly.&lt;/p>
+&lt;p>It was a fun and exceptionally educational ride that taught me Javascript in production, continuous integration, and the development cycle/relationship that consisted of not just me, but the testers and users that provided the insight needed to improve the project.&lt;/p>
+&lt;p>&lt;strong>Thank you to everyone that contributed code to the project. Thank you to everyone that provided me ideas, gave me feedback, and tested the project. Thank you to everyone that used the project and made it such a success! It has been a fun ride and one that I would repeat in a heartbeat. Have fun and stay safe!&lt;/strong>&lt;/p>
+&lt;h3 id="milestones">Milestones&lt;/h3>
+&lt;p>A lot of the milestones are visible in the project &lt;a href="https://github.com/sas-fossdev/saspes/blob/master/CHANGELOG.md">changelog&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>2018-09-15: First Version with semester GPA display. At this point, the project was in a private repo.&lt;/li>
+&lt;li>2018-09-25: Ability to view final percent of classes&lt;/li>
+&lt;li>2018-09-25: Around this time, the first beta testers came on. The project was in a closed alpha state at this point but having beta testers to tell me how useful the features I was developing were and what new features would be nice to have was invaluable.&lt;/li>
+&lt;li>2018-11-02: Addition of the hypothetical grade calculator&lt;/li>
+&lt;li>2018-11-04: First formal bug report form a tester. A beta tester informed me that the extension would fail to work properly if they took a course that had more than one instructor.&lt;/li>
+&lt;li>2018-11-07: Addition of final percent indicators on the main page&lt;/li>
+&lt;li>2018-11-15: First logo design. I originally tried to find a graphics designer that would be willing to design a logo for the extension but could not find one so I made a simple one in photoshop.&lt;/li>
+&lt;li>2018-11-18: Logo design finalized.&lt;/li>
+&lt;li>&lt;strong>2018-11-19: PUBLIC RELEASE!!!!&lt;/strong>&lt;/li>
+&lt;li>2018-12-25: Public release of source code. The source code was now visible for everyone but was not yet open source as the code was distributed unlicensed.&lt;/li>
+&lt;li>2019-01-22: &lt;strong>Open sourced!&lt;/strong> Source code relicensed to GPL-3.0.&lt;/li>
+&lt;li>2019-04-24: Addition of the hypothetical assignment calculator.&lt;/li>
+&lt;li>2019-09-18: Many important things got released on this date
+&lt;ul>
+&lt;li>Migration to use npm for dependencies&lt;/li>
+&lt;li>Migration to Webpack&lt;/li>
+&lt;li>Beginning of migration to VueJS&lt;/li>
+&lt;li>Relicensed source code to AGPL-3.0-only&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2019-10-07: First pull request from another developer&lt;/li>
+&lt;li>2020-04-17: Suhas added the ability to calculate cumulative GPA including the effect of the current semester.&lt;/li>
+&lt;li>2020-09-25: Primary Maintainership officially passed to Suhas.&lt;/li>
+&lt;/ul></description></item><item><title>Personal F-Droid Repository</title><link>https://garykim.dev/blog/2020/04/14/personal-f-droid-repository/</link><pubDate>Tue, 14 Apr 2020 05:23:20 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/04/14/personal-f-droid-repository/</guid><description>&lt;p>On my Android phone, most of the apps installed are open source ones installed from the &lt;a href="https://f-droid.org">F-Droid&lt;/a> repository.
+One of these apps that I use everyday is &lt;a href="https://github.com/teamnewpipe/newpipe">NewPipe&lt;/a>, an &lt;cite href="https://github.com/teamnewpipe/newpipe">libre lightweight streaming front-end&lt;/cite>, mainly used for watching Youtube.&lt;/p>
+&lt;p>One of the things that makes NewPipe special is that it does not rely on the YouTube API. By not relying on the YouTube API, the amount of data that Google can collect about your video watching habits on YouTube is reduced.
+Unfortunately, it also means that any change to the YouTube frontend is likely to break NewPipe until the next update. Fortunately, thanks to the amazing work of everyone involved in the NewPipe project, whenever a change to the YouTube frontend does break the app, an update is soon to follow to use the new frontend.&lt;/p>
+&lt;p>There is one slight issue though: F-Droid can be slow with fetching updates and making it available in their repository.
+The people working on F-Droid have been working to address this issue but still, with the current setup, it can take several days for an update to be available in the repository which means a few days of NewPipe not working.&lt;/p>
+&lt;p>Around January 2020, another update to the YouTube frontend broke NewPipe. Okay, not uncommon, there should be an update to fix the issue pretty soon. I checked the issue tracker to make sure that it was a known issue then decided to wait for a fix.
+I waited a couple days and didn&amp;rsquo;t find an update in F-Droid. I checked the repository for NewPipe and found an update with the fix but that update was not yet available in the F-Droid repository.&lt;/p>
+&lt;p>This was the point at which I decided it would make sense for me to create my own F-Droid repository so I can make faster updates for the apps that I do use.&lt;/p>
+&lt;p>I had been wanting to do this for a while anyways so I can have apps such as Signal through F-Droid as well (&lt;a href="https://github.com/signalapp/Signal-Android/issues/127">Moxie has held strong in the opinion that it would not be wise to distribute Signal through any repository other than the Google Play Store&lt;/a>) since I leave Google Play Store and Google Play Services disabled on all my devices.&lt;/p>
+&lt;h3 id="making-an-f-droid-repo">Making an F-Droid Repo&lt;/h3>
+&lt;p>Making your own F-Droid repo is a relatively simply process. An F-Droid repo, similar to other Linux software repositories, is a directory of packages and metadata about those packages which can then be served with any web server. This could also be done through S3 if that&amp;rsquo;s more your boat.&lt;/p>
+&lt;p>There&amp;rsquo;s a simple to use script for this called &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a>.&lt;/p>
+&lt;p>You can create a new fdroid repo running the following in an empty directory.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>fdroid init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>3 important directories will be created: &lt;code>repo&lt;/code>, &lt;code>archive&lt;/code>, &lt;code>tmp&lt;/code>. These are the directories that you must serve. &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a> actually includes functionality for moving these directories onto a web server, although I personally find that it is easier to handle this with &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;p>To add a new app into your repository, move your apk file into your F-Droid repo directory and run &lt;code>fdroid update -c&lt;/code> to create skeleton config files for your the apps you just added. It is also possible to have &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a> compile apps for you with the proper libraries and the Android SDK.&lt;/p>
+&lt;p>Once your config files are created, you can generate your final repository by running the following command:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>fdroid update --use-date-from-apk --rename-apks
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The &lt;code>--use-date-from-apk --rename-apks&lt;/code> flags, do what you&amp;rsquo;d expect them to, although if you don&amp;rsquo;t want to use those flags, that also works great.&lt;/p>
+&lt;p>Once you have set up the repo, simply move the &lt;code>repo&lt;/code> and &lt;code>archive&lt;/code> directories onto a web server and add a url to those directories into the F-Droid app and you have a working F-Droid repo!&lt;/p>
+&lt;h3 id="automating-the-repos-updates">Automating the Repo&amp;rsquo;s Updates&lt;/h3>
+&lt;p>Now obviously, no one want to have to do this whenever they want an update to one of their apps. In my case, I made the updates a CI run.&lt;/p>
+&lt;p>I have a self-hosted instance of the proprietary version of Drone CI that I use for many of my projects. I used to use the open source version of Drone but the open source version is very limited in features. Unfortunately, anything beyond to most basic CI features are part of the proprietary version. If a community driven open source CI project starts that is even half as intuitive and easy to use as Drone, I would switch to it in a second.&lt;/p>
+&lt;p>I already had a way to publish websites on a subdomain from a CI run set up.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/personal-fdroid-repo/fdroid-drone.png"
+alt="Drone CI Screenshot"/>
+&lt;/figure>
+&lt;p>The CI is set up to run 4 main steps and runs every night to check for updates to apps in the repo.&lt;/p>
+&lt;h5 id="download-the-repo">Download the Repo&lt;/h5>
+&lt;p>The first step is downloading the current state of the repo from the host. This is done via &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;h5 id="update-apps">Update Apps&lt;/h5>
+&lt;p>During this step, the CI downloads the current versions of all the apps in the repo.&lt;/p>
+&lt;p>After downloading current versions of all the apps, the apps are deduplicated using &lt;code>rdfind&lt;/code>.&lt;/p>
+&lt;h5 id="update-repo">Update Repo&lt;/h5>
+&lt;p>&lt;code>fdroidserver&lt;/code> is run to generate new indexes for updates to apps.&lt;/p>
+&lt;h5 id="push-repo">Push Repo&lt;/h5>
+&lt;p>The final step is to push the new repo to the host using &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;h3 id="final-words">Final Words&lt;/h3>
+&lt;p>In the end, this is what I ended up with:&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/personal-fdroid-repo/screenshot-1.png"
+alt="Screenshot on Phone"/>
+&lt;/figure>
+&lt;p>The funny thing at the end of all this was that it turns out there is already an F-Droid repo by the NewPipe developers that is updated faster then the official F-Droid repo. The repo is not yet public but you can ask around on the NewPipe IRC and they&amp;rsquo;ll give it to you.
+The main problem I was attempting to address by creating my own F-Droid Repo could have been addressed in a way that was much easier but it was still a very nice learning experience.&lt;/p>
+&lt;p>I now have a personal F-Droid repo with NewPipe and a couple other apps that are not available through the F-Droid repos at &lt;a href="https://f-droid.garykim.dev/fdroid/repo/">https://f-droid.garykim.dev/fdroid/repo/&lt;/a>.&lt;/p></description></item><item><title>Scrapdash - Hack &amp; Roll 2020</title><link>https://garykim.dev/blog/2020/02/01/scrapdash-hack-roll-2020/</link><pubDate>Sat, 01 Feb 2020 02:50:13 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/02/01/scrapdash-hack-roll-2020/</guid><description>&lt;p>Recently, I had the opportunity to go to &lt;a href="https://hacknroll.nushackers.org">Hack &amp;amp; Roll 2020&lt;/a> (&lt;a href="https://hacknroll2020.devpost.com">Devpost&lt;/a>), hosted by annually &lt;a href="http://nus.edu.sg/">NUS (National University of Singapore)&lt;/a> and organized by &lt;a href="https://www.nushackers.org/">NUS Hackers&lt;/a> in Singapore.&lt;/p>
+&lt;p>So first thing&amp;rsquo;s first, what did we make? We made a browser extension called Scrapdash. The repository for it can be found &lt;a href="https://github.com/gary-kim/scrapdash">here&lt;/a> and the Devpost can be found &lt;a href="https://devpost.com/software/scrapdash">here&lt;/a>.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-1.jpg"
+alt="Scrapdash Screenshot 1"/>
+&lt;/figure>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-2.jpg"
+alt="Scrapdash Screenshot 2"/>
+&lt;/figure>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-3.jpg"
+alt="Scrapdash Screenshot 3"/>
+&lt;/figure>
+&lt;h3 id="scrapdash">Scrapdash&lt;/h3>
+&lt;p>The name Scrapdash is actually a shortened version of &lt;code>Scraper Dashboard&lt;/code>. Scrapdash let&amp;rsquo;s you select an element in a site that you&amp;rsquo;d like to keep track of and provides a dashboard in which you can see the current state of these sites. You can also decide if you&amp;rsquo;d like just the text or a screenshot.&lt;/p>
+&lt;p>The screenshot functionality made it difficult to make an entirely self-contained extension. Even though it would be possible, we decided instead to make a server component to the extension that could do the actual scraping of sites off-site if configured.&lt;/p>
+&lt;p>Currently, only a development version of Scrapdash is available. There&amp;rsquo;s quite a few issues to be fixed and features to be added before the first release. You can see the progress of that &lt;a href="https://github.com/gary-kim/scrapdash/issues/2">here&lt;/a>. If you would like to play with it now, you can find the code &lt;a href="https://github.com/gary-kim/scrapdash">on GitHub&lt;/a>.&lt;/p>
+&lt;h3 id="installing-scrapdash">Installing Scrapdash&lt;/h3>
+&lt;p>To install Scrapdash, first clone the &lt;a href="https://github.com/gary-kim/scrapdash">GitHub repo&lt;/a> the run the following commands inside to create an unpacked version that you can load into your browser of choice.&lt;/p>
+&lt;p>For Chromium based browsers such as Chrome, run the following commands&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run webpack:build:chromium
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>For Firefox based browsers, run the following commands&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run webpack:build:firefox
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This will create a a folder called &lt;code>dist&lt;/code> in the directory that has the built extension, ready to install. If you&amp;rsquo;d like to make a &lt;code>.zip&lt;/code> that can be submitted to extension repositories, you can run &lt;code>npm run package&lt;/code>.&lt;/p>
+&lt;p>You can then install the extension as you normally would for unpacked extensions.&lt;/p>
+&lt;h3 id="scrapdash-server">Scrapdash Server&lt;/h3>
+&lt;p>Scrapdash is made of two components, the extension and a server that can be hosted on the same system as the extension or, if you&amp;rsquo;d like, a remote server.&lt;/p>
+&lt;p>The easiest way to install is using the container image &lt;a href="https://hub.docker.com/r/garykim/scrapdash-server">available on Docker Hub&lt;/a>. You can run this on a system with Docker installed with the following command:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>docker run -p 3000:3000 --cap-add&lt;span style="color:#f92672">=&lt;/span>SYS_ADMIN -d -e SCRAPDASH_SHARED_PASSWORD&lt;span style="color:#f92672">=&lt;/span>sharedsecret garykim/scrapdash-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>You can also run the Node server directly by running the following commands in the host directory that you&amp;rsquo;ll find in the project directory:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>node main.js &amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>.&lt;/p>
+&lt;p>&lt;strong>If you set it up on a remote machine, make sure to put it behind a reverse proxy with &lt;code>https&lt;/code> as your cookies will be sent to the server as well.&lt;/strong>&lt;/p>
+&lt;p>You can then set up your Scrapdash server url and shared secret in the &lt;code>Remotes&lt;/code> tab of your Scrapdash page.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-remotes.png"
+alt="Scrapdash Remotes Page"/>
+&lt;/figure></description></item><item><title>Constructions with Manim</title><link>https://garykim.dev/blog/2019/12/03/constructions-with-manim/</link><pubDate>Tue, 03 Dec 2019 02:20:25 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2019/12/03/constructions-with-manim/</guid><description>&lt;p>Just a few fun constructions made in &lt;a href="https://github.com/3b1b/manim">Manim&lt;/a>. Manim (Math Animation Engine) &lt;cite href="https://github.com/3b1b/manim">is an animation engine for explanatory math videos&lt;/cite> made by &lt;a href="https://www.3blue1brown.com">3Blue1Brown&lt;/a> (Grant Sanderson) and available under the MIT license.&lt;/p>
+&lt;p>&lt;strong>There&amp;rsquo;s a few more that I&amp;rsquo;m currently working on. I&amp;rsquo;ll add them here as they get finished.&lt;/strong>&lt;/p>
+&lt;p>All the scripts used to make these videos are available &lt;a href="https://git.garykim.dev/gary-kim/trying-manim">here&lt;/a>.&lt;br>
+The commands to generate each video is written under most of the videos.&lt;/p>
+&lt;h2 id="compass-and-straight-edge">Compass and Straight Edge&lt;/h2>
+&lt;h4 id="perpendicular-bisector">Perpendicular Bisector&lt;/h4>
+&lt;p>Given a line, draw its perpendicular bisector.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PerpendicularBisector.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PerpendicularBisector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="parallel-line-on-a-point">Parallel Line on a Point&lt;/h4>
+&lt;p>Given a line and a point not on the line, draw a line that is parallel and goes through the give point.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/ParallelLine.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py ParallelLine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="angle-bisector">Angle Bisector&lt;/h4>
+&lt;p>Given an angle, draw its bisector.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/AngleBisector.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py AngleBisector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="regular-pentagon-starting-with-a-side">Regular Pentagon Starting With a Side&lt;/h4>
+&lt;p>Given a line, draw a regular pentagon for which the given line would be a side.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/RegularPentagonWithSide.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py RegularPentagonWithSide
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="3d-constructions">3D Constructions&lt;/h2>
+&lt;p>What can you make in 3 dimensions with just spheres?&lt;/p>
+&lt;h4 id="plane-to-perpendicular-line">Plane to Perpendicular Line&lt;/h4>
+&lt;p>Given a plane, draw a line that is perpendicular to the plane.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PlaneToPerpendicularLine.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PlaneToPerpendicularLine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="line-to-perpendicular-plane">Line to Perpendicular Plane&lt;/h4>
+&lt;p>Given a line, draw a plane that is perpendicular to the line.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PerpendicularPlane.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PerpendicularPlane
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="trying-to-figure-out-how-to-use-manim">Trying to figure out how to use Manim&lt;/h2>
+&lt;h4 id="following-getting-started">Following Getting Started&lt;/h4>
+&lt;p>Just trying to figure out what is possible with Manim. Mostly following the getting started guides.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/EnterScene.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim enter-scene.py EnterScene
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="graphscene-example">GraphScene Example&lt;/h4>
+&lt;p>Messing with &lt;code>GraphScene&lt;/code> in Manim.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/Graphing.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim enter-scene.py Graphing
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="trying-to-make-a-3d-scene-didnt-really-work">Trying to Make a 3D Scene (didn&amp;rsquo;t really work)&lt;/h4>
+&lt;p>First attempt at trying to use &lt;code>Special3DScene&lt;/code>.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/ThreeDObjects.mp4" type="video/mp4">
+&lt;/video></description></item><item><title>First Post</title><link>https://garykim.dev/blog/2019/11/30/first-post/</link><pubDate>Sat, 30 Nov 2019 08:04:56 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2019/11/30/first-post/</guid><description>&lt;p>Initial commit.&lt;/p>
+&lt;p>This is my personal blog. This blog is unlikely to ever have anything interesting but if you want to visit it occasionally for whatever reason, thank you.&lt;/p></description></item></channel></rss>

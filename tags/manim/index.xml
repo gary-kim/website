@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Manim on Gary Kim: Website</title><link>https://garykim.dev/tags/manim/</link><description>Recent content in Manim on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Tue, 03 Dec 2019 02:20:25 +0000</lastBuildDate><atom:link href="https://garykim.dev/tags/manim/index.xml" rel="self" type="application/rss+xml"/><item><title>Constructions with Manim</title><link>https://garykim.dev/blog/2019/12/03/constructions-with-manim/</link><pubDate>Tue, 03 Dec 2019 02:20:25 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2019/12/03/constructions-with-manim/</guid><description>&lt;p>Just a few fun constructions made in &lt;a href="https://github.com/3b1b/manim">Manim&lt;/a>. Manim (Math Animation Engine) &lt;cite href="https://github.com/3b1b/manim">is an animation engine for explanatory math videos&lt;/cite> made by &lt;a href="https://www.3blue1brown.com">3Blue1Brown&lt;/a> (Grant Sanderson) and available under the MIT license.&lt;/p>
+&lt;p>&lt;strong>There&amp;rsquo;s a few more that I&amp;rsquo;m currently working on. I&amp;rsquo;ll add them here as they get finished.&lt;/strong>&lt;/p>
+&lt;p>All the scripts used to make these videos are available &lt;a href="https://git.garykim.dev/gary-kim/trying-manim">here&lt;/a>.&lt;br>
+The commands to generate each video is written under most of the videos.&lt;/p>
+&lt;h2 id="compass-and-straight-edge">Compass and Straight Edge&lt;/h2>
+&lt;h4 id="perpendicular-bisector">Perpendicular Bisector&lt;/h4>
+&lt;p>Given a line, draw its perpendicular bisector.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PerpendicularBisector.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PerpendicularBisector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="parallel-line-on-a-point">Parallel Line on a Point&lt;/h4>
+&lt;p>Given a line and a point not on the line, draw a line that is parallel and goes through the give point.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/ParallelLine.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py ParallelLine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="angle-bisector">Angle Bisector&lt;/h4>
+&lt;p>Given an angle, draw its bisector.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/AngleBisector.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py AngleBisector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="regular-pentagon-starting-with-a-side">Regular Pentagon Starting With a Side&lt;/h4>
+&lt;p>Given a line, draw a regular pentagon for which the given line would be a side.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/RegularPentagonWithSide.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py RegularPentagonWithSide
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="3d-constructions">3D Constructions&lt;/h2>
+&lt;p>What can you make in 3 dimensions with just spheres?&lt;/p>
+&lt;h4 id="plane-to-perpendicular-line">Plane to Perpendicular Line&lt;/h4>
+&lt;p>Given a plane, draw a line that is perpendicular to the plane.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PlaneToPerpendicularLine.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PlaneToPerpendicularLine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="line-to-perpendicular-plane">Line to Perpendicular Plane&lt;/h4>
+&lt;p>Given a line, draw a plane that is perpendicular to the line.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PerpendicularPlane.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PerpendicularPlane
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="trying-to-figure-out-how-to-use-manim">Trying to figure out how to use Manim&lt;/h2>
+&lt;h4 id="following-getting-started">Following Getting Started&lt;/h4>
+&lt;p>Just trying to figure out what is possible with Manim. Mostly following the getting started guides.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/EnterScene.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim enter-scene.py EnterScene
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="graphscene-example">GraphScene Example&lt;/h4>
+&lt;p>Messing with &lt;code>GraphScene&lt;/code> in Manim.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/Graphing.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim enter-scene.py Graphing
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="trying-to-make-a-3d-scene-didnt-really-work">Trying to Make a 3D Scene (didn&amp;rsquo;t really work)&lt;/h4>
+&lt;p>First attempt at trying to use &lt;code>Special3DScene&lt;/code>.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/ThreeDObjects.mp4" type="video/mp4">
+&lt;/video></description></item></channel></rss>
