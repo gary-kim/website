@@ -4,7 +4,11 @@
 
 {{ define "content" }}
 <div class="post-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}
+    {{ $pages = site.RegularPages }}
+    {{ end }}
+    {{ $paginator := .Paginate (where $pages "Section" "in" site.Params.mainSections) }}
     {{ range $paginator.Pages }}
     {{ if .Draft }}
     {{ .Scratch.Set "draftPage" true }}
@@ -34,9 +38,4 @@
 {{ end }}
 
 {{ define "footer" }}
-{{ if .Site.GoogleAnalytics }}
-<!-- Google Analytics -->
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-{{ partial "footer/font-awesome-js.html" . }}
 {{ end }}

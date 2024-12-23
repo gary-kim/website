@@ -1,1 +1,41 @@
-blog/blog.html
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
+{{ define "content" }}
+<div class="post-list">
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}
+    {{ $pages = site.RegularPages }}
+    {{ end }}
+    {{ $paginator := .Paginate (where $pages "Section" "in" site.Params.mainSections) }}
+    {{ range $paginator.Pages }}
+    {{ if .Draft }}
+    {{ .Scratch.Set "draftPage" true }}
+    {{ else }}
+    {{ .Scratch.Set "draftPage" false }}
+    {{ end }}
+    <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="{{ .RelPermalink }}" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>{{ .Title }}</a>
+        </span>
+        {{ partial "page-single/post-meta" . }}
+        <div {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
+        {{ if .Description }}
+        {{ .Description }}
+        {{ else }}
+        {{ .Summary }}
+        {{ end }}
+        </div>
+        {{ if or .Truncated .Description }}
+        <a class="read-more-symbol" href="{{ .RelPermalink }}">Read More</a>
+        {{ end }}
+    </div>
+    {{ .Scratch.Delete "draftPage" }}
+    {{ end }}
+</div>
+{{ partial "pagination.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+{{ end }}

@@ -2,7 +2,7 @@
     "baseURL": "https://garykim.dev/",
     "languageCode:": "en-us",
     "title": "Gary Kim: Website",
-    "theme": "hyde-hyde",
+    "theme": "triple-hyde",
     "canonifyurls": true,
     "enableRobotsTXT": true,
     "enableGitInfo": true,
