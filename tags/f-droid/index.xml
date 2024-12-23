@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>F-Droid on Gary Kim: Website</title><link>https://garykim.dev/tags/f-droid/</link><description>Recent content in F-Droid on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Tue, 14 Apr 2020 05:23:20 +0000</lastBuildDate><atom:link href="https://garykim.dev/tags/f-droid/index.xml" rel="self" type="application/rss+xml"/><item><title>Personal F-Droid Repository</title><link>https://garykim.dev/blog/2020/04/14/personal-f-droid-repository/</link><pubDate>Tue, 14 Apr 2020 05:23:20 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/04/14/personal-f-droid-repository/</guid><description>&lt;p>On my Android phone, most of the apps installed are open source ones installed from the &lt;a href="https://f-droid.org">F-Droid&lt;/a> repository.
+One of these apps that I use everyday is &lt;a href="https://github.com/teamnewpipe/newpipe">NewPipe&lt;/a>, an &lt;cite href="https://github.com/teamnewpipe/newpipe">libre lightweight streaming front-end&lt;/cite>, mainly used for watching Youtube.&lt;/p>
+&lt;p>One of the things that makes NewPipe special is that it does not rely on the YouTube API. By not relying on the YouTube API, the amount of data that Google can collect about your video watching habits on YouTube is reduced.
+Unfortunately, it also means that any change to the YouTube frontend is likely to break NewPipe until the next update. Fortunately, thanks to the amazing work of everyone involved in the NewPipe project, whenever a change to the YouTube frontend does break the app, an update is soon to follow to use the new frontend.&lt;/p>
+&lt;p>There is one slight issue though: F-Droid can be slow with fetching updates and making it available in their repository.
+The people working on F-Droid have been working to address this issue but still, with the current setup, it can take several days for an update to be available in the repository which means a few days of NewPipe not working.&lt;/p>
+&lt;p>Around January 2020, another update to the YouTube frontend broke NewPipe. Okay, not uncommon, there should be an update to fix the issue pretty soon. I checked the issue tracker to make sure that it was a known issue then decided to wait for a fix.
+I waited a couple days and didn&amp;rsquo;t find an update in F-Droid. I checked the repository for NewPipe and found an update with the fix but that update was not yet available in the F-Droid repository.&lt;/p>
+&lt;p>This was the point at which I decided it would make sense for me to create my own F-Droid repository so I can make faster updates for the apps that I do use.&lt;/p>
+&lt;p>I had been wanting to do this for a while anyways so I can have apps such as Signal through F-Droid as well (&lt;a href="https://github.com/signalapp/Signal-Android/issues/127">Moxie has held strong in the opinion that it would not be wise to distribute Signal through any repository other than the Google Play Store&lt;/a>) since I leave Google Play Store and Google Play Services disabled on all my devices.&lt;/p>
+&lt;h3 id="making-an-f-droid-repo">Making an F-Droid Repo&lt;/h3>
+&lt;p>Making your own F-Droid repo is a relatively simply process. An F-Droid repo, similar to other Linux software repositories, is a directory of packages and metadata about those packages which can then be served with any web server. This could also be done through S3 if that&amp;rsquo;s more your boat.&lt;/p>
+&lt;p>There&amp;rsquo;s a simple to use script for this called &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a>.&lt;/p>
+&lt;p>You can create a new fdroid repo running the following in an empty directory.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>fdroid init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>3 important directories will be created: &lt;code>repo&lt;/code>, &lt;code>archive&lt;/code>, &lt;code>tmp&lt;/code>. These are the directories that you must serve. &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a> actually includes functionality for moving these directories onto a web server, although I personally find that it is easier to handle this with &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;p>To add a new app into your repository, move your apk file into your F-Droid repo directory and run &lt;code>fdroid update -c&lt;/code> to create skeleton config files for your the apps you just added. It is also possible to have &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a> compile apps for you with the proper libraries and the Android SDK.&lt;/p>
+&lt;p>Once your config files are created, you can generate your final repository by running the following command:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>fdroid update --use-date-from-apk --rename-apks
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The &lt;code>--use-date-from-apk --rename-apks&lt;/code> flags, do what you&amp;rsquo;d expect them to, although if you don&amp;rsquo;t want to use those flags, that also works great.&lt;/p>
+&lt;p>Once you have set up the repo, simply move the &lt;code>repo&lt;/code> and &lt;code>archive&lt;/code> directories onto a web server and add a url to those directories into the F-Droid app and you have a working F-Droid repo!&lt;/p>
+&lt;h3 id="automating-the-repos-updates">Automating the Repo&amp;rsquo;s Updates&lt;/h3>
+&lt;p>Now obviously, no one want to have to do this whenever they want an update to one of their apps. In my case, I made the updates a CI run.&lt;/p>
+&lt;p>I have a self-hosted instance of the proprietary version of Drone CI that I use for many of my projects. I used to use the open source version of Drone but the open source version is very limited in features. Unfortunately, anything beyond to most basic CI features are part of the proprietary version. If a community driven open source CI project starts that is even half as intuitive and easy to use as Drone, I would switch to it in a second.&lt;/p>
+&lt;p>I already had a way to publish websites on a subdomain from a CI run set up.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/personal-fdroid-repo/fdroid-drone.png"
+alt="Drone CI Screenshot"/>
+&lt;/figure>
+&lt;p>The CI is set up to run 4 main steps and runs every night to check for updates to apps in the repo.&lt;/p>
+&lt;h5 id="download-the-repo">Download the Repo&lt;/h5>
+&lt;p>The first step is downloading the current state of the repo from the host. This is done via &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;h5 id="update-apps">Update Apps&lt;/h5>
+&lt;p>During this step, the CI downloads the current versions of all the apps in the repo.&lt;/p>
+&lt;p>After downloading current versions of all the apps, the apps are deduplicated using &lt;code>rdfind&lt;/code>.&lt;/p>
+&lt;h5 id="update-repo">Update Repo&lt;/h5>
+&lt;p>&lt;code>fdroidserver&lt;/code> is run to generate new indexes for updates to apps.&lt;/p>
+&lt;h5 id="push-repo">Push Repo&lt;/h5>
+&lt;p>The final step is to push the new repo to the host using &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;h3 id="final-words">Final Words&lt;/h3>
+&lt;p>In the end, this is what I ended up with:&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/personal-fdroid-repo/screenshot-1.png"
+alt="Screenshot on Phone"/>
+&lt;/figure>
+&lt;p>The funny thing at the end of all this was that it turns out there is already an F-Droid repo by the NewPipe developers that is updated faster then the official F-Droid repo. The repo is not yet public but you can ask around on the NewPipe IRC and they&amp;rsquo;ll give it to you.
+The main problem I was attempting to address by creating my own F-Droid Repo could have been addressed in a way that was much easier but it was still a very nice learning experience.&lt;/p>
+&lt;p>I now have a personal F-Droid repo with NewPipe and a couple other apps that are not available through the F-Droid repos at &lt;a href="https://f-droid.garykim.dev/fdroid/repo/">https://f-droid.garykim.dev/fdroid/repo/&lt;/a>.&lt;/p></description></item></channel></rss>

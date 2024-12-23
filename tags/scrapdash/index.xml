@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scrapdash on Gary Kim: Website</title><link>https://garykim.dev/tags/scrapdash/</link><description>Recent content in Scrapdash on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Sat, 01 Feb 2020 02:50:13 +0000</lastBuildDate><atom:link href="https://garykim.dev/tags/scrapdash/index.xml" rel="self" type="application/rss+xml"/><item><title>Scrapdash - Hack &amp; Roll 2020</title><link>https://garykim.dev/blog/2020/02/01/scrapdash-hack-roll-2020/</link><pubDate>Sat, 01 Feb 2020 02:50:13 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/02/01/scrapdash-hack-roll-2020/</guid><description>&lt;p>Recently, I had the opportunity to go to &lt;a href="https://hacknroll.nushackers.org">Hack &amp;amp; Roll 2020&lt;/a> (&lt;a href="https://hacknroll2020.devpost.com">Devpost&lt;/a>), hosted by annually &lt;a href="http://nus.edu.sg/">NUS (National University of Singapore)&lt;/a> and organized by &lt;a href="https://www.nushackers.org/">NUS Hackers&lt;/a> in Singapore.&lt;/p>
+&lt;p>So first thing&amp;rsquo;s first, what did we make? We made a browser extension called Scrapdash. The repository for it can be found &lt;a href="https://github.com/gary-kim/scrapdash">here&lt;/a> and the Devpost can be found &lt;a href="https://devpost.com/software/scrapdash">here&lt;/a>.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-1.jpg"
+alt="Scrapdash Screenshot 1"/>
+&lt;/figure>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-2.jpg"
+alt="Scrapdash Screenshot 2"/>
+&lt;/figure>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-3.jpg"
+alt="Scrapdash Screenshot 3"/>
+&lt;/figure>
+&lt;h3 id="scrapdash">Scrapdash&lt;/h3>
+&lt;p>The name Scrapdash is actually a shortened version of &lt;code>Scraper Dashboard&lt;/code>. Scrapdash let&amp;rsquo;s you select an element in a site that you&amp;rsquo;d like to keep track of and provides a dashboard in which you can see the current state of these sites. You can also decide if you&amp;rsquo;d like just the text or a screenshot.&lt;/p>
+&lt;p>The screenshot functionality made it difficult to make an entirely self-contained extension. Even though it would be possible, we decided instead to make a server component to the extension that could do the actual scraping of sites off-site if configured.&lt;/p>
+&lt;p>Currently, only a development version of Scrapdash is available. There&amp;rsquo;s quite a few issues to be fixed and features to be added before the first release. You can see the progress of that &lt;a href="https://github.com/gary-kim/scrapdash/issues/2">here&lt;/a>. If you would like to play with it now, you can find the code &lt;a href="https://github.com/gary-kim/scrapdash">on GitHub&lt;/a>.&lt;/p>
+&lt;h3 id="installing-scrapdash">Installing Scrapdash&lt;/h3>
+&lt;p>To install Scrapdash, first clone the &lt;a href="https://github.com/gary-kim/scrapdash">GitHub repo&lt;/a> the run the following commands inside to create an unpacked version that you can load into your browser of choice.&lt;/p>
+&lt;p>For Chromium based browsers such as Chrome, run the following commands&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run webpack:build:chromium
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>For Firefox based browsers, run the following commands&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run webpack:build:firefox
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This will create a a folder called &lt;code>dist&lt;/code> in the directory that has the built extension, ready to install. If you&amp;rsquo;d like to make a &lt;code>.zip&lt;/code> that can be submitted to extension repositories, you can run &lt;code>npm run package&lt;/code>.&lt;/p>
+&lt;p>You can then install the extension as you normally would for unpacked extensions.&lt;/p>
+&lt;h3 id="scrapdash-server">Scrapdash Server&lt;/h3>
+&lt;p>Scrapdash is made of two components, the extension and a server that can be hosted on the same system as the extension or, if you&amp;rsquo;d like, a remote server.&lt;/p>
+&lt;p>The easiest way to install is using the container image &lt;a href="https://hub.docker.com/r/garykim/scrapdash-server">available on Docker Hub&lt;/a>. You can run this on a system with Docker installed with the following command:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>docker run -p 3000:3000 --cap-add&lt;span style="color:#f92672">=&lt;/span>SYS_ADMIN -d -e SCRAPDASH_SHARED_PASSWORD&lt;span style="color:#f92672">=&lt;/span>sharedsecret garykim/scrapdash-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>You can also run the Node server directly by running the following commands in the host directory that you&amp;rsquo;ll find in the project directory:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>node main.js &amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>.&lt;/p>
+&lt;p>&lt;strong>If you set it up on a remote machine, make sure to put it behind a reverse proxy with &lt;code>https&lt;/code> as your cookies will be sent to the server as well.&lt;/strong>&lt;/p>
+&lt;p>You can then set up your Scrapdash server url and shared secret in the &lt;code>Remotes&lt;/code> tab of your Scrapdash page.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-remotes.png"
+alt="Scrapdash Remotes Page"/>
+&lt;/figure></description></item></channel></rss>

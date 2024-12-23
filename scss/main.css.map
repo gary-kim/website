@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sourceRoot": "/home/runner/work/website/website",
+	"sources": [
+		"assets/scss/main.scss"
+	],
+	"sourcesContent": [
+		"video {\n    max-width: 100%;\n}\n\n.post__meta {\n    svg {\n        padding-right: 5px;\n    }\n}\n\n.logo-image {\n    margin-top: 0;\n    margin-bottom: 0;\n}\n\n.post-list__item, article {\n    box-shadow: 2px 2px 5px 0px #878787;\n    padding: 20px;\n    border-radius: 10px;\n}\n\na.read-more-symbol {\n    border: #00cc00 1px solid;\n    border-radius: 5px;\n    padding: 3px;\n    font-size: 15px;\n    color: #00cc00 !important;\n}\n\n.content {\n    margin-left: auto;\n    margin-right: auto;\n    max-width: 70rem;\n}\n\n@media (min-width: 1024px) {\n    .inside-body {\n        padding-left: 16rem;\n    }\n}\n\n.posts {\n    padding-left: 0;\n}\n\n#TableOfContents {\n    margin-left: 1em;\n}\n\nfigure {\n    &.centered {\n        img {\n            margin: 1em auto;\n        }\n    }\n    & > img {\n        cursor: pointer;\n    }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,KAAK,AAAC,CACF,SAAS,CAAE,IAAI,CAClB,AAED,AACI,WADO,CACP,GAAG,AAAC,CACA,aAAa,CAAE,GAAG,CACrB,AAGL,AAAA,WAAW,AAAC,CACR,UAAU,CAAE,CAAC,CACb,aAAa,CAAE,CAAC,CACnB,AAED,AAAA,gBAAgB,CAAE,OAAO,AAAC,CACtB,UAAU,CAAE,uBAAuB,CACnC,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,CAAC,AAAA,iBAAiB,AAAC,CACf,MAAM,CAAE,iBAAiB,CACzB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,kBAAkB,CAC5B,AAED,AAAA,QAAQ,AAAC,CACL,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CAClB,SAAS,CAAE,KAAK,CACnB,AAED,MAAM,oBACF,CAAA,AAAA,YAAY,AAAC,CACT,YAAY,CAAE,KAAK,CACtB,CAAA,AAGL,AAAA,MAAM,AAAC,CACH,YAAY,CAAE,CAAC,CAClB,AAED,AAAA,gBAAgB,AAAC,CACb,WAAW,CAAE,GAAG,CACnB,AAED,AAEQ,MAFF,AACD,SAAS,CACN,GAAG,AAAC,CACA,MAAM,CAAE,QAAQ,CACnB,AAJT,AAMI,MANE,CAME,GAAG,AAAC,CACJ,MAAM,CAAE,OAAO,CAClB"
+}

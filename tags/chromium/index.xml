@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>chromium on Gary Kim: Website</title><link>https://garykim.dev/tags/chromium/</link><description>Recent content in chromium on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://garykim.dev/tags/chromium/index.xml" rel="self" type="application/rss+xml"/><item><title>SAS Powerschool Enhancement Suite has a new maintainer</title><link>https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/</guid><description>&lt;h3 id="what-is-sas-powerschool-enhancement-suite">What is SAS Powerschool Enhancement Suite&lt;/h3>
+&lt;p>SAS Powerschool Enhancement Suite (better known as SAS PES) is a browser extension for Firefox and Chromium-based browsers that adds many convenient features when using Powerschool at &lt;a href="https://www.sas.edu.sg/">Singapore American School&lt;/a> as a student. The extension was originally for use by only high school students but is now also used by middle school students and parents alike. If you want to learn more about the project, please visit our &lt;a href="https://github.com/sas-fossdev/saspes#readme">README&lt;/a>.&lt;/p>
+&lt;p>Relevant links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sas-fossdev/saspes">Source Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sas-fossdev/saspes/releases">Firefox Extension Download&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk">Chrome Web Store Entry&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/1.png"
+alt="Main Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/2.png"
+alt="Second Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/3.png"
+alt="Third Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/passing-saspes-maintainership/image1.png"
+alt="Forth Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="new-maintainer">New Maintainer&lt;/h3>
+&lt;p>As I am no longer associated with the school, I felt that it would be better if someone that was still associated with the school continued to maintain the project. Someone that is still in touch with the students, faculty, and environment of the school would be far better suited to continue to evolve the project to serve its users best. To that end, I have passed the role of maintainer onto &lt;a href="https://github.com/suhas-13">Suhas Hariharan&lt;/a>. Suhas has made several new features and fixes in the extension that many users actively use.&lt;/p>
+&lt;p>I will still be available as a co-maintainer to advise and help fix issues but Suhas is now the primary maintainer.&lt;/p>
+&lt;h3 id="some-history">Some History&lt;/h3>
+&lt;p>Developing this extension has been quite the journey for me. I started the project while learning Javascript and the project evolved with me. As I learned more about Javascript and the tooling available, the project gradually became more capable and more complex in both its code and its tooling.&lt;/p>
+&lt;p>The idea for the extension was originally by &lt;a href="https://tcode2k16.github.io/blog/">Alan Chang&lt;/a> (&lt;a href="https://twitter.com/tcode2k16">@tcode2k16&lt;/a>), a great friend of mine. The idea for the extension at first was rather simple. There was no way to view the current semester GPA in Powerschool but everyone knew how to calculate it themselves. That calculation was simple so why not do it automatically and put it in the page using an extension? Alan quickly made a prototype of this idea.&lt;/p>
+&lt;p>I was very intrigued when I saw the extension and the idea to improve the experience of students using extensions. I started working on an extension to do something similar for Schoology, another service that Singapore American Students used (You can still see the remnants of this attempt &lt;a href="https://github.com/gary-kim/sasses">here&lt;/a>). After a while, it became clear that maintaining this extension was going to be painful due to the way that Schoology is built, especially with my limited knowledge in Javascript at the time. I gave up on the idea for a bit thinking that I&amp;rsquo;d come back to it later. I asked Alan at this point if he was planning to release the extension publicly and, if not, if I could use his idea for a Powerschool extension and try to develop it further. He said he&amp;rsquo;d be fine with me developing his idea further so I got to work.&lt;/p>
+&lt;p>I came up with some ideas about features that I thought people would find useful and implemented a few basic ones. I quickly got a few friends to be beta testers for my extension. They would provide me feedback in the form of ideas and bugs. Their help, ideas, and bug reports were invaluable. I implemented many of these ideas and continued to improve upon features already in the extension with the help of my beta testers such as Sanjo Ray. Thank you for helping make the project so much more successful by giving valuable feedback.&lt;/p>
+&lt;p>The extension was then publicly released in November of 2018. News of the release spread by word of mouth between students and within 2 weeks, more than 100 people had installed the extension. Within half a year, more than half the students in the high school had the extension and it became more common to see students with the extension than without.&lt;/p>
+&lt;p>The project kept evolving from that point as I learned more about Javascript, its tooling, and its community. I learned about the more modern Javascript features I could use if I migrated to using &lt;a href="https://babeljs.io/">Babel&lt;/a>, so I did. I learned about how &lt;a href="https://webpack.js.org/">Webpack&lt;/a> could simplify my dependency situation, so the project migrated to it. I learned how to use &lt;a href="https://vuejs.org">Vue&lt;/a> as I got involved in the &lt;a href="https://nextcloud.com">Nextcloud&lt;/a> project, so large parts of the extension was migrated to &lt;a href="https://vuejs.org">VueJS&lt;/a>.&lt;/p>
+&lt;p>In early 2019, I realized that development could be much quicker and better with more people involved so started working to make the project more inviting to potential contributors. Suhas was one of the people that started contributing significantly.&lt;/p>
+&lt;p>It was a fun and exceptionally educational ride that taught me Javascript in production, continuous integration, and the development cycle/relationship that consisted of not just me, but the testers and users that provided the insight needed to improve the project.&lt;/p>
+&lt;p>&lt;strong>Thank you to everyone that contributed code to the project. Thank you to everyone that provided me ideas, gave me feedback, and tested the project. Thank you to everyone that used the project and made it such a success! It has been a fun ride and one that I would repeat in a heartbeat. Have fun and stay safe!&lt;/strong>&lt;/p>
+&lt;h3 id="milestones">Milestones&lt;/h3>
+&lt;p>A lot of the milestones are visible in the project &lt;a href="https://github.com/sas-fossdev/saspes/blob/master/CHANGELOG.md">changelog&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>2018-09-15: First Version with semester GPA display. At this point, the project was in a private repo.&lt;/li>
+&lt;li>2018-09-25: Ability to view final percent of classes&lt;/li>
+&lt;li>2018-09-25: Around this time, the first beta testers came on. The project was in a closed alpha state at this point but having beta testers to tell me how useful the features I was developing were and what new features would be nice to have was invaluable.&lt;/li>
+&lt;li>2018-11-02: Addition of the hypothetical grade calculator&lt;/li>
+&lt;li>2018-11-04: First formal bug report form a tester. A beta tester informed me that the extension would fail to work properly if they took a course that had more than one instructor.&lt;/li>
+&lt;li>2018-11-07: Addition of final percent indicators on the main page&lt;/li>
+&lt;li>2018-11-15: First logo design. I originally tried to find a graphics designer that would be willing to design a logo for the extension but could not find one so I made a simple one in photoshop.&lt;/li>
+&lt;li>2018-11-18: Logo design finalized.&lt;/li>
+&lt;li>&lt;strong>2018-11-19: PUBLIC RELEASE!!!!&lt;/strong>&lt;/li>
+&lt;li>2018-12-25: Public release of source code. The source code was now visible for everyone but was not yet open source as the code was distributed unlicensed.&lt;/li>
+&lt;li>2019-01-22: &lt;strong>Open sourced!&lt;/strong> Source code relicensed to GPL-3.0.&lt;/li>
+&lt;li>2019-04-24: Addition of the hypothetical assignment calculator.&lt;/li>
+&lt;li>2019-09-18: Many important things got released on this date
+&lt;ul>
+&lt;li>Migration to use npm for dependencies&lt;/li>
+&lt;li>Migration to Webpack&lt;/li>
+&lt;li>Beginning of migration to VueJS&lt;/li>
+&lt;li>Relicensed source code to AGPL-3.0-only&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2019-10-07: First pull request from another developer&lt;/li>
+&lt;li>2020-04-17: Suhas added the ability to calculate cumulative GPA including the effect of the current semester.&lt;/li>
+&lt;li>2020-09-25: Primary Maintainership officially passed to Suhas.&lt;/li>
+&lt;/ul></description></item></channel></rss>
