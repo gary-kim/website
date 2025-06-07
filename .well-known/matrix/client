@@ -1,0 +1,9 @@
+{
+    "m.homeserver": {
+        "base_url": "https://matrix.garykim.dev/",
+        "server_name": "Gary Kim Matrix Server"
+    },
+    "im.vector.riot.jitsi": {
+        "preferredDomain": "jitsi.garykim.dev"
+    }
+}

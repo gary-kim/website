@@ -1,0 +1,31 @@
+
+# Sustainable Development Goals
+
+### by Gary Kim
+
+***
+
+![](/res/large/sdg/cities.png)
+
+Specifically regarding transportation in NYC
+
+***
+
+NYC Public Transportation
+
+**
+
+New York City's public transportation is managed by the MTA: a public benefit corporation.
+
+**
+
+![](https://upload.wikimedia.org/wikipedia/commons/5/56/R160_E_enters_42nd_Street.jpg)
+
+***
+
+Problem statement
+
+**
+
+What events throughout history contributed to New York City's public transport system what it is today and what can be done to improve both its quality and access to help make New York City a more sustainable city?
+

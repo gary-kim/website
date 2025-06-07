@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on Gary Kim: Website</title><link>https://garykim.dev/tags/golang/</link><description>Recent content in golang on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://garykim.dev/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Nextcloud Talk Library Release</title><link>https://garykim.dev/blog/2020/09/10/go-nextcloud-talk-library-release/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/09/10/go-nextcloud-talk-library-release/</guid><description>&lt;p>If you want to interact with &lt;a href="https://nextcloud.com/talk">Nextcloud Talk&lt;/a> easily in a Go project, you can use the Go Nextcloud Talk library.&lt;/p>
+&lt;p>You can find the godoc documentation &lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk?tab=doc">here&lt;/a>.&lt;/p>
+&lt;p>Relevant Links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gary-kim/go-nc-talk">Source Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk?tab=doc">godoc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h4 id="add-the-library-to-your-project">Add the library to your project&lt;/h4>
+&lt;pre tabindex="0">&lt;code>GO111MODULE=on go get gomod.garykim.dev/nc-talk
+&lt;/code>&lt;/pre>&lt;h3 id="current-usage">Current Usage&lt;/h3>
+&lt;p>&lt;a href="https://github.com/42wim/matterbridge">Matterbridge&lt;/a> from version 1.18.0 onwards includes support for Nextcloud Talk. This is done using the Go Nextcloud Talk library.&lt;/p></description></item></channel></rss>

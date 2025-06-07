@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "garykim.dev Backend",
+    "server": "https://speedtest.garykim.dev/backend/", 
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  }
+]

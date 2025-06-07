@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gary Kim: Website</title><link>https://garykim.dev/</link><description>Recent content on Gary Kim: Website</description><generator>Hugo -- gohugo.io</generator><managingEditor>gary@garykim.dev (Gary Kim)</managingEditor><webMaster>gary@garykim.dev (Gary Kim)</webMaster><copyright>© 2019-2020 Gary Kim,&lt;br />All Rights Reserved&lt;br />Content licensed &lt;a href="https://github.com/gary-kim/website/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">CC-BY-SA-4.0&lt;/a></copyright><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://garykim.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Nextcloud Talk Library Release</title><link>https://garykim.dev/blog/2020/09/10/go-nextcloud-talk-library-release/</link><pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/09/10/go-nextcloud-talk-library-release/</guid><description>&lt;p>If you want to interact with &lt;a href="https://nextcloud.com/talk">Nextcloud Talk&lt;/a> easily in a Go project, you can use the Go Nextcloud Talk library.&lt;/p>
+&lt;p>You can find the godoc documentation &lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk?tab=doc">here&lt;/a>.&lt;/p>
+&lt;p>Relevant Links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gary-kim/go-nc-talk">Source Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk?tab=doc">godoc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h4 id="add-the-library-to-your-project">Add the library to your project&lt;/h4>
+&lt;pre tabindex="0">&lt;code>GO111MODULE=on go get gomod.garykim.dev/nc-talk
+&lt;/code>&lt;/pre>&lt;h3 id="current-usage">Current Usage&lt;/h3>
+&lt;p>&lt;a href="https://github.com/42wim/matterbridge">Matterbridge&lt;/a> from version 1.18.0 onwards includes support for Nextcloud Talk. This is done using the Go Nextcloud Talk library.&lt;/p></description></item><item><title>SAS Powerschool Enhancement Suite has a new maintainer</title><link>https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/</guid><description>&lt;h3 id="what-is-sas-powerschool-enhancement-suite">What is SAS Powerschool Enhancement Suite&lt;/h3>
+&lt;p>SAS Powerschool Enhancement Suite (better known as SAS PES) is a browser extension for Firefox and Chromium-based browsers that adds many convenient features when using Powerschool at &lt;a href="https://www.sas.edu.sg/">Singapore American School&lt;/a> as a student. The extension was originally for use by only high school students but is now also used by middle school students and parents alike. If you want to learn more about the project, please visit our &lt;a href="https://github.com/sas-fossdev/saspes#readme">README&lt;/a>.&lt;/p>
+&lt;p>Relevant links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sas-fossdev/saspes">Source Code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sas-fossdev/saspes/releases">Firefox Extension Download&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk">Chrome Web Store Entry&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/1.png"
+alt="Main Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/2.png"
+alt="Second Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/3.png"
+alt="Third Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/passing-saspes-maintainership/image1.png"
+alt="Forth Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="new-maintainer">New Maintainer&lt;/h3>
+&lt;p>As I am no longer associated with the school, I felt that it would be better if someone that was still associated with the school continued to maintain the project. Someone that is still in touch with the students, faculty, and environment of the school would be far better suited to continue to evolve the project to serve its users best. To that end, I have passed the role of maintainer onto &lt;a href="https://github.com/suhas-13">Suhas Hariharan&lt;/a>. Suhas has made several new features and fixes in the extension that many users actively use.&lt;/p>
+&lt;p>I will still be available as a co-maintainer to advise and help fix issues but Suhas is now the primary maintainer.&lt;/p>
+&lt;h3 id="some-history">Some History&lt;/h3>
+&lt;p>Developing this extension has been quite the journey for me. I started the project while learning Javascript and the project evolved with me. As I learned more about Javascript and the tooling available, the project gradually became more capable and more complex in both its code and its tooling.&lt;/p>
+&lt;p>The idea for the extension was originally by &lt;a href="https://tcode2k16.github.io/blog/">Alan Chang&lt;/a> (&lt;a href="https://twitter.com/tcode2k16">@tcode2k16&lt;/a>), a great friend of mine. The idea for the extension at first was rather simple. There was no way to view the current semester GPA in Powerschool but everyone knew how to calculate it themselves. That calculation was simple so why not do it automatically and put it in the page using an extension? Alan quickly made a prototype of this idea.&lt;/p>
+&lt;p>I was very intrigued when I saw the extension and the idea to improve the experience of students using extensions. I started working on an extension to do something similar for Schoology, another service that Singapore American Students used (You can still see the remnants of this attempt &lt;a href="https://github.com/gary-kim/sasses">here&lt;/a>). After a while, it became clear that maintaining this extension was going to be painful due to the way that Schoology is built, especially with my limited knowledge in Javascript at the time. I gave up on the idea for a bit thinking that I&amp;rsquo;d come back to it later. I asked Alan at this point if he was planning to release the extension publicly and, if not, if I could use his idea for a Powerschool extension and try to develop it further. He said he&amp;rsquo;d be fine with me developing his idea further so I got to work.&lt;/p>
+&lt;p>I came up with some ideas about features that I thought people would find useful and implemented a few basic ones. I quickly got a few friends to be beta testers for my extension. They would provide me feedback in the form of ideas and bugs. Their help, ideas, and bug reports were invaluable. I implemented many of these ideas and continued to improve upon features already in the extension with the help of my beta testers such as Sanjo Ray. Thank you for helping make the project so much more successful by giving valuable feedback.&lt;/p>
+&lt;p>The extension was then publicly released in November of 2018. News of the release spread by word of mouth between students and within 2 weeks, more than 100 people had installed the extension. Within half a year, more than half the students in the high school had the extension and it became more common to see students with the extension than without.&lt;/p>
+&lt;p>The project kept evolving from that point as I learned more about Javascript, its tooling, and its community. I learned about the more modern Javascript features I could use if I migrated to using &lt;a href="https://babeljs.io/">Babel&lt;/a>, so I did. I learned about how &lt;a href="https://webpack.js.org/">Webpack&lt;/a> could simplify my dependency situation, so the project migrated to it. I learned how to use &lt;a href="https://vuejs.org">Vue&lt;/a> as I got involved in the &lt;a href="https://nextcloud.com">Nextcloud&lt;/a> project, so large parts of the extension was migrated to &lt;a href="https://vuejs.org">VueJS&lt;/a>.&lt;/p>
+&lt;p>In early 2019, I realized that development could be much quicker and better with more people involved so started working to make the project more inviting to potential contributors. Suhas was one of the people that started contributing significantly.&lt;/p>
+&lt;p>It was a fun and exceptionally educational ride that taught me Javascript in production, continuous integration, and the development cycle/relationship that consisted of not just me, but the testers and users that provided the insight needed to improve the project.&lt;/p>
+&lt;p>&lt;strong>Thank you to everyone that contributed code to the project. Thank you to everyone that provided me ideas, gave me feedback, and tested the project. Thank you to everyone that used the project and made it such a success! It has been a fun ride and one that I would repeat in a heartbeat. Have fun and stay safe!&lt;/strong>&lt;/p>
+&lt;h3 id="milestones">Milestones&lt;/h3>
+&lt;p>A lot of the milestones are visible in the project &lt;a href="https://github.com/sas-fossdev/saspes/blob/master/CHANGELOG.md">changelog&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>2018-09-15: First Version with semester GPA display. At this point, the project was in a private repo.&lt;/li>
+&lt;li>2018-09-25: Ability to view final percent of classes&lt;/li>
+&lt;li>2018-09-25: Around this time, the first beta testers came on. The project was in a closed alpha state at this point but having beta testers to tell me how useful the features I was developing were and what new features would be nice to have was invaluable.&lt;/li>
+&lt;li>2018-11-02: Addition of the hypothetical grade calculator&lt;/li>
+&lt;li>2018-11-04: First formal bug report form a tester. A beta tester informed me that the extension would fail to work properly if they took a course that had more than one instructor.&lt;/li>
+&lt;li>2018-11-07: Addition of final percent indicators on the main page&lt;/li>
+&lt;li>2018-11-15: First logo design. I originally tried to find a graphics designer that would be willing to design a logo for the extension but could not find one so I made a simple one in photoshop.&lt;/li>
+&lt;li>2018-11-18: Logo design finalized.&lt;/li>
+&lt;li>&lt;strong>2018-11-19: PUBLIC RELEASE!!!!&lt;/strong>&lt;/li>
+&lt;li>2018-12-25: Public release of source code. The source code was now visible for everyone but was not yet open source as the code was distributed unlicensed.&lt;/li>
+&lt;li>2019-01-22: &lt;strong>Open sourced!&lt;/strong> Source code relicensed to GPL-3.0.&lt;/li>
+&lt;li>2019-04-24: Addition of the hypothetical assignment calculator.&lt;/li>
+&lt;li>2019-09-18: Many important things got released on this date
+&lt;ul>
+&lt;li>Migration to use npm for dependencies&lt;/li>
+&lt;li>Migration to Webpack&lt;/li>
+&lt;li>Beginning of migration to VueJS&lt;/li>
+&lt;li>Relicensed source code to AGPL-3.0-only&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2019-10-07: First pull request from another developer&lt;/li>
+&lt;li>2020-04-17: Suhas added the ability to calculate cumulative GPA including the effect of the current semester.&lt;/li>
+&lt;li>2020-09-25: Primary Maintainership officially passed to Suhas.&lt;/li>
+&lt;/ul></description></item><item><title>Personal F-Droid Repository</title><link>https://garykim.dev/blog/2020/04/14/personal-f-droid-repository/</link><pubDate>Tue, 14 Apr 2020 05:23:20 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/04/14/personal-f-droid-repository/</guid><description>&lt;p>On my Android phone, most of the apps installed are open source ones installed from the &lt;a href="https://f-droid.org">F-Droid&lt;/a> repository.
+One of these apps that I use everyday is &lt;a href="https://github.com/teamnewpipe/newpipe">NewPipe&lt;/a>, an &lt;cite href="https://github.com/teamnewpipe/newpipe">libre lightweight streaming front-end&lt;/cite>, mainly used for watching Youtube.&lt;/p>
+&lt;p>One of the things that makes NewPipe special is that it does not rely on the YouTube API. By not relying on the YouTube API, the amount of data that Google can collect about your video watching habits on YouTube is reduced.
+Unfortunately, it also means that any change to the YouTube frontend is likely to break NewPipe until the next update. Fortunately, thanks to the amazing work of everyone involved in the NewPipe project, whenever a change to the YouTube frontend does break the app, an update is soon to follow to use the new frontend.&lt;/p>
+&lt;p>There is one slight issue though: F-Droid can be slow with fetching updates and making it available in their repository.
+The people working on F-Droid have been working to address this issue but still, with the current setup, it can take several days for an update to be available in the repository which means a few days of NewPipe not working.&lt;/p>
+&lt;p>Around January 2020, another update to the YouTube frontend broke NewPipe. Okay, not uncommon, there should be an update to fix the issue pretty soon. I checked the issue tracker to make sure that it was a known issue then decided to wait for a fix.
+I waited a couple days and didn&amp;rsquo;t find an update in F-Droid. I checked the repository for NewPipe and found an update with the fix but that update was not yet available in the F-Droid repository.&lt;/p>
+&lt;p>This was the point at which I decided it would make sense for me to create my own F-Droid repository so I can make faster updates for the apps that I do use.&lt;/p>
+&lt;p>I had been wanting to do this for a while anyways so I can have apps such as Signal through F-Droid as well (&lt;a href="https://github.com/signalapp/Signal-Android/issues/127">Moxie has held strong in the opinion that it would not be wise to distribute Signal through any repository other than the Google Play Store&lt;/a>) since I leave Google Play Store and Google Play Services disabled on all my devices.&lt;/p>
+&lt;h3 id="making-an-f-droid-repo">Making an F-Droid Repo&lt;/h3>
+&lt;p>Making your own F-Droid repo is a relatively simply process. An F-Droid repo, similar to other Linux software repositories, is a directory of packages and metadata about those packages which can then be served with any web server. This could also be done through S3 if that&amp;rsquo;s more your boat.&lt;/p>
+&lt;p>There&amp;rsquo;s a simple to use script for this called &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a>.&lt;/p>
+&lt;p>You can create a new fdroid repo running the following in an empty directory.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>fdroid init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>3 important directories will be created: &lt;code>repo&lt;/code>, &lt;code>archive&lt;/code>, &lt;code>tmp&lt;/code>. These are the directories that you must serve. &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a> actually includes functionality for moving these directories onto a web server, although I personally find that it is easier to handle this with &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;p>To add a new app into your repository, move your apk file into your F-Droid repo directory and run &lt;code>fdroid update -c&lt;/code> to create skeleton config files for your the apps you just added. It is also possible to have &lt;a href="https://gitlab.com/fdroid/fdroidserver">fdroidserver&lt;/a> compile apps for you with the proper libraries and the Android SDK.&lt;/p>
+&lt;p>Once your config files are created, you can generate your final repository by running the following command:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>fdroid update --use-date-from-apk --rename-apks
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>The &lt;code>--use-date-from-apk --rename-apks&lt;/code> flags, do what you&amp;rsquo;d expect them to, although if you don&amp;rsquo;t want to use those flags, that also works great.&lt;/p>
+&lt;p>Once you have set up the repo, simply move the &lt;code>repo&lt;/code> and &lt;code>archive&lt;/code> directories onto a web server and add a url to those directories into the F-Droid app and you have a working F-Droid repo!&lt;/p>
+&lt;h3 id="automating-the-repos-updates">Automating the Repo&amp;rsquo;s Updates&lt;/h3>
+&lt;p>Now obviously, no one want to have to do this whenever they want an update to one of their apps. In my case, I made the updates a CI run.&lt;/p>
+&lt;p>I have a self-hosted instance of the proprietary version of Drone CI that I use for many of my projects. I used to use the open source version of Drone but the open source version is very limited in features. Unfortunately, anything beyond to most basic CI features are part of the proprietary version. If a community driven open source CI project starts that is even half as intuitive and easy to use as Drone, I would switch to it in a second.&lt;/p>
+&lt;p>I already had a way to publish websites on a subdomain from a CI run set up.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/personal-fdroid-repo/fdroid-drone.png"
+alt="Drone CI Screenshot"/>
+&lt;/figure>
+&lt;p>The CI is set up to run 4 main steps and runs every night to check for updates to apps in the repo.&lt;/p>
+&lt;h5 id="download-the-repo">Download the Repo&lt;/h5>
+&lt;p>The first step is downloading the current state of the repo from the host. This is done via &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;h5 id="update-apps">Update Apps&lt;/h5>
+&lt;p>During this step, the CI downloads the current versions of all the apps in the repo.&lt;/p>
+&lt;p>After downloading current versions of all the apps, the apps are deduplicated using &lt;code>rdfind&lt;/code>.&lt;/p>
+&lt;h5 id="update-repo">Update Repo&lt;/h5>
+&lt;p>&lt;code>fdroidserver&lt;/code> is run to generate new indexes for updates to apps.&lt;/p>
+&lt;h5 id="push-repo">Push Repo&lt;/h5>
+&lt;p>The final step is to push the new repo to the host using &lt;a href="https://github.com/rclone/rclone">Rclone&lt;/a>.&lt;/p>
+&lt;h3 id="final-words">Final Words&lt;/h3>
+&lt;p>In the end, this is what I ended up with:&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/personal-fdroid-repo/screenshot-1.png"
+alt="Screenshot on Phone"/>
+&lt;/figure>
+&lt;p>The funny thing at the end of all this was that it turns out there is already an F-Droid repo by the NewPipe developers that is updated faster then the official F-Droid repo. The repo is not yet public but you can ask around on the NewPipe IRC and they&amp;rsquo;ll give it to you.
+The main problem I was attempting to address by creating my own F-Droid Repo could have been addressed in a way that was much easier but it was still a very nice learning experience.&lt;/p>
+&lt;p>I now have a personal F-Droid repo with NewPipe and a couple other apps that are not available through the F-Droid repos at &lt;a href="https://f-droid.garykim.dev/fdroid/repo/">https://f-droid.garykim.dev/fdroid/repo/&lt;/a>.&lt;/p></description></item><item><title>Scrapdash - Hack &amp; Roll 2020</title><link>https://garykim.dev/blog/2020/02/01/scrapdash-hack-roll-2020/</link><pubDate>Sat, 01 Feb 2020 02:50:13 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2020/02/01/scrapdash-hack-roll-2020/</guid><description>&lt;p>Recently, I had the opportunity to go to &lt;a href="https://hacknroll.nushackers.org">Hack &amp;amp; Roll 2020&lt;/a> (&lt;a href="https://hacknroll2020.devpost.com">Devpost&lt;/a>), hosted by annually &lt;a href="http://nus.edu.sg/">NUS (National University of Singapore)&lt;/a> and organized by &lt;a href="https://www.nushackers.org/">NUS Hackers&lt;/a> in Singapore.&lt;/p>
+&lt;p>So first thing&amp;rsquo;s first, what did we make? We made a browser extension called Scrapdash. The repository for it can be found &lt;a href="https://github.com/gary-kim/scrapdash">here&lt;/a> and the Devpost can be found &lt;a href="https://devpost.com/software/scrapdash">here&lt;/a>.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-1.jpg"
+alt="Scrapdash Screenshot 1"/>
+&lt;/figure>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-2.jpg"
+alt="Scrapdash Screenshot 2"/>
+&lt;/figure>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-3.jpg"
+alt="Scrapdash Screenshot 3"/>
+&lt;/figure>
+&lt;h3 id="scrapdash">Scrapdash&lt;/h3>
+&lt;p>The name Scrapdash is actually a shortened version of &lt;code>Scraper Dashboard&lt;/code>. Scrapdash let&amp;rsquo;s you select an element in a site that you&amp;rsquo;d like to keep track of and provides a dashboard in which you can see the current state of these sites. You can also decide if you&amp;rsquo;d like just the text or a screenshot.&lt;/p>
+&lt;p>The screenshot functionality made it difficult to make an entirely self-contained extension. Even though it would be possible, we decided instead to make a server component to the extension that could do the actual scraping of sites off-site if configured.&lt;/p>
+&lt;p>Currently, only a development version of Scrapdash is available. There&amp;rsquo;s quite a few issues to be fixed and features to be added before the first release. You can see the progress of that &lt;a href="https://github.com/gary-kim/scrapdash/issues/2">here&lt;/a>. If you would like to play with it now, you can find the code &lt;a href="https://github.com/gary-kim/scrapdash">on GitHub&lt;/a>.&lt;/p>
+&lt;h3 id="installing-scrapdash">Installing Scrapdash&lt;/h3>
+&lt;p>To install Scrapdash, first clone the &lt;a href="https://github.com/gary-kim/scrapdash">GitHub repo&lt;/a> the run the following commands inside to create an unpacked version that you can load into your browser of choice.&lt;/p>
+&lt;p>For Chromium based browsers such as Chrome, run the following commands&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run webpack:build:chromium
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>For Firefox based browsers, run the following commands&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm run webpack:build:firefox
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This will create a a folder called &lt;code>dist&lt;/code> in the directory that has the built extension, ready to install. If you&amp;rsquo;d like to make a &lt;code>.zip&lt;/code> that can be submitted to extension repositories, you can run &lt;code>npm run package&lt;/code>.&lt;/p>
+&lt;p>You can then install the extension as you normally would for unpacked extensions.&lt;/p>
+&lt;h3 id="scrapdash-server">Scrapdash Server&lt;/h3>
+&lt;p>Scrapdash is made of two components, the extension and a server that can be hosted on the same system as the extension or, if you&amp;rsquo;d like, a remote server.&lt;/p>
+&lt;p>The easiest way to install is using the container image &lt;a href="https://hub.docker.com/r/garykim/scrapdash-server">available on Docker Hub&lt;/a>. You can run this on a system with Docker installed with the following command:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>docker run -p 3000:3000 --cap-add&lt;span style="color:#f92672">=&lt;/span>SYS_ADMIN -d -e SCRAPDASH_SHARED_PASSWORD&lt;span style="color:#f92672">=&lt;/span>sharedsecret garykim/scrapdash-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>You can also run the Node server directly by running the following commands in the host directory that you&amp;rsquo;ll find in the project directory:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm i
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>node main.js &amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>.&lt;/p>
+&lt;p>&lt;strong>If you set it up on a remote machine, make sure to put it behind a reverse proxy with &lt;code>https&lt;/code> as your cookies will be sent to the server as well.&lt;/strong>&lt;/p>
+&lt;p>You can then set up your Scrapdash server url and shared secret in the &lt;code>Remotes&lt;/code> tab of your Scrapdash page.&lt;/p>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/hack-n-roll-2020/scrapdash-remotes.png"
+alt="Scrapdash Remotes Page"/>
+&lt;/figure></description></item><item><title>Constructions with Manim</title><link>https://garykim.dev/blog/2019/12/03/constructions-with-manim/</link><pubDate>Tue, 03 Dec 2019 02:20:25 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2019/12/03/constructions-with-manim/</guid><description>&lt;p>Just a few fun constructions made in &lt;a href="https://github.com/3b1b/manim">Manim&lt;/a>. Manim (Math Animation Engine) &lt;cite href="https://github.com/3b1b/manim">is an animation engine for explanatory math videos&lt;/cite> made by &lt;a href="https://www.3blue1brown.com">3Blue1Brown&lt;/a> (Grant Sanderson) and available under the MIT license.&lt;/p>
+&lt;p>&lt;strong>There&amp;rsquo;s a few more that I&amp;rsquo;m currently working on. I&amp;rsquo;ll add them here as they get finished.&lt;/strong>&lt;/p>
+&lt;p>All the scripts used to make these videos are available &lt;a href="https://git.garykim.dev/gary-kim/trying-manim">here&lt;/a>.&lt;br>
+The commands to generate each video is written under most of the videos.&lt;/p>
+&lt;h2 id="compass-and-straight-edge">Compass and Straight Edge&lt;/h2>
+&lt;h4 id="perpendicular-bisector">Perpendicular Bisector&lt;/h4>
+&lt;p>Given a line, draw its perpendicular bisector.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PerpendicularBisector.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PerpendicularBisector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="parallel-line-on-a-point">Parallel Line on a Point&lt;/h4>
+&lt;p>Given a line and a point not on the line, draw a line that is parallel and goes through the give point.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/ParallelLine.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py ParallelLine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="angle-bisector">Angle Bisector&lt;/h4>
+&lt;p>Given an angle, draw its bisector.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/AngleBisector.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py AngleBisector
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="regular-pentagon-starting-with-a-side">Regular Pentagon Starting With a Side&lt;/h4>
+&lt;p>Given a line, draw a regular pentagon for which the given line would be a side.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/RegularPentagonWithSide.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py RegularPentagonWithSide
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="3d-constructions">3D Constructions&lt;/h2>
+&lt;p>What can you make in 3 dimensions with just spheres?&lt;/p>
+&lt;h4 id="plane-to-perpendicular-line">Plane to Perpendicular Line&lt;/h4>
+&lt;p>Given a plane, draw a line that is perpendicular to the plane.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PlaneToPerpendicularLine.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PlaneToPerpendicularLine
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="line-to-perpendicular-plane">Line to Perpendicular Plane&lt;/h4>
+&lt;p>Given a line, draw a plane that is perpendicular to the line.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/PerpendicularPlane.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim constructions.py PerpendicularPlane
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="trying-to-figure-out-how-to-use-manim">Trying to figure out how to use Manim&lt;/h2>
+&lt;h4 id="following-getting-started">Following Getting Started&lt;/h4>
+&lt;p>Just trying to figure out what is possible with Manim. Mostly following the getting started guides.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/EnterScene.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim enter-scene.py EnterScene
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="graphscene-example">GraphScene Example&lt;/h4>
+&lt;p>Messing with &lt;code>GraphScene&lt;/code> in Manim.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/Graphing.mp4" type="video/mp4">
+&lt;/video>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># To generate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>manim enter-scene.py Graphing
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="trying-to-make-a-3d-scene-didnt-really-work">Trying to Make a 3D Scene (didn&amp;rsquo;t really work)&lt;/h4>
+&lt;p>First attempt at trying to use &lt;code>Special3DScene&lt;/code>.&lt;/p>
+&lt;video controls>
+&lt;source src="https://garykim.dev/res/large/manim-constructions/ThreeDObjects.mp4" type="video/mp4">
+&lt;/video></description></item><item><title>First Post</title><link>https://garykim.dev/blog/2019/11/30/first-post/</link><pubDate>Sat, 30 Nov 2019 08:04:56 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/blog/2019/11/30/first-post/</guid><description>&lt;p>Initial commit.&lt;/p>
+&lt;p>This is my personal blog. This blog is unlikely to ever have anything interesting but if you want to visit it occasionally for whatever reason, thank you.&lt;/p></description></item><item><title>Contact</title><link>https://garykim.dev/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/contact/</guid><description>&lt;p>Ways to get in contact with me&lt;/p>
+&lt;h5 id="best-ways">Best Ways&lt;/h5>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Email&lt;/th>
+&lt;th style="text-align:center">Matrix&lt;/th>
+&lt;th style="text-align:center">GitHub&lt;/th>
+&lt;th style="text-align:center">SourceHut&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">
+&lt;a href="mailto:gary@garykim.dev" rel="me" target="_blank" rel="noopener noreferrer">gary@garykim.dev&lt;/a>
+&lt;/td>
+&lt;td style="text-align:center">
+&lt;a href="https://matrix.to/#/%40gary%3agarykim.dev" rel="me" target="_blank" rel="noopener noreferrer">@gary:garykim.dev&lt;/a>
+&lt;/td>
+&lt;td style="text-align:center">
+&lt;a href="https://github.com/gary-kim" rel="me" target="_blank" rel="noopener noreferrer">@gary-kim&lt;/a>
+&lt;/td>
+&lt;td style="text-align:center">
+&lt;a href="https://sr.ht/~gary-kim" rel="me" target="_blank" rel="noopener noreferrer">~gary-kim&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h5 id="sometimes-checked">Sometimes Checked&lt;/h5>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Linkedin&lt;/th>
+&lt;th style="text-align:center">Discord&lt;/th>
+&lt;th style="text-align:center">Amateur Radio&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">
+&lt;a href="https://linkedin.com/in/gary-kim-dev" rel="me" target="_blank" rel="noopener noreferrer">gary-kim-dev&lt;/a>
+&lt;/td>
+&lt;td style="text-align:center">
+Gary#6885
+&lt;/td>
+&lt;td style="text-align:center">&lt;a href="https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=4534870">KD2YMU&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;p>If you need to get in contact with me, I will be the fastest responding to my email, &lt;a href="mailto:gary@garykim.dev">gary@garykim.dev&lt;/a>, and Matrix, &lt;a href="https://matrix.to/#/@gary:garykim.dev">@gary:garykim.dev&lt;/a>.&lt;/p></description></item><item><title>Donations</title><link>https://garykim.dev/donations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/donations/</guid><description>&lt;p>&lt;strong>Unfortunately, I am currently unable to accept donations.&lt;/strong> Thank you for even considering.&lt;/p>
+&lt;p>If you want to send me a thank you note, you can email me at
+&lt;a href="mailto:gary@garykim.dev" rel="me" target="_blank" rel="noopener noreferrer">gary@garykim.dev&lt;/a>
+. Thank you!&lt;/p></description></item><item><title>HSS-4: Getting a Better Sense of Population</title><link>https://garykim.dev/other/hss-4-population/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/other/hss-4-population/</guid><description>&lt;p>&lt;strong>Disclaimer: This calculator assumes that the population is spread out perfectly in every country.&lt;/strong>&lt;/p>
+&lt;p>Select Country:&lt;/p>
+&lt;select id='country-selector'>
+&lt;/select>
+&lt;p>Input number of effected people:&lt;/p>
+&lt;input type="number" id="number-people" value="40000000">
+&lt;p>Total in country: &lt;span id="nation-total">&lt;/span>&lt;/p>
+&lt;p>Number of effected in country: &lt;span id="nation-effected">&lt;/span>&lt;/p>
+&lt;script>
+let countrySelector = document.getElementById('country-selector');
+let numberInput = document.getElementById('number-people');
+let nationTotal = document.getElementById('nation-total');
+let nationEffected = document.getElementById('nation-effected');
+let data = [];
+let total = 0;
+async function pageRun() {
+data = await (await fetch('https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-population.json')).json();
+data.forEach(c => {
+let o = document.createElement('option');
+o.value = c.country;
+o.innerText = c.country;
+countrySelector.appendChild(o);
+total += c.population;
+});
+countrySelector.addEventListener('change', onChange);
+numberInput.addEventListener('change', onChange);
+onChange();
+}
+function onChange() {
+let cs = countrySelector.value;
+let ni = numberInput.value;
+let pop = data.find(d => d.country === cs).population;
+let percent = pop / total;
+nationTotal.innerText = pop.toLocaleString('en-US');
+nationEffected.innerText = Math.round(percent * ni).toLocaleString('en-US');
+}
+pageRun();
+&lt;/script></description></item><item><title>Hyperloop Comms &amp; Controls</title><link>https://garykim.dev/other/2021-09-23-hyperloop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/other/2021-09-23-hyperloop/</guid><description>
+## Hyperloop Comms &amp; Controls
+***
+## General
+**
+Make pod actually do pod things
+**
+Take the subsystems created by others in the team and add the software and hardware required to integrate it and have it communicate with the rest of the pod and the pod control system.
+***
+## Software
+**
+### Logic Flow
+![](/res/large/tmp/d.png)
+**
+### User Interface
+![](/res/large/tmp/ui.png)
+***
+## Hardware
+**
+### BeagleBone Controller
+![](/res/large/tmp/bb.png)
+**
+### ESTOP Board
+![](/res/large/tmp/estop.png)
+**
+### Diagram
+![](/res/large/tmp/diagram.png)
+***
+## Overall Goals
+**
+Work more closely with other subsystems
+**
+Refactor software to be more extensible
+**
+Explore alternative hardware options
+**
+Build the systems to control any other subsystems that get built this semester</description></item><item><title>Hyperloop Comms &amp; Controls</title><link>https://garykim.dev/other/tmp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/other/tmp/</guid><description>
+## Hyperloop Comms &amp; Controls
+***
+## General
+**
+Make pod actually do pod things
+**
+Take the subsystems created by others in the team and add the software and hardware required to integrate it and have it communicate with the rest of the pod and the pod control system.
+***
+## Software
+**
+### Logic Flow
+![](/res/large/2021-09-23-hyperloop/d.png)
+**
+### User Interface
+![](/res/large/2021-09-23-hyperloop/ui.png)
+***
+## Hardware
+**
+### BeagleBone Controller
+![](/res/large/2021-09-23-hyperloop/bb.png)
+**
+### ESTOP Board
+![](/res/large/2021-09-23-hyperloop/estop.png)
+**
+### Diagram
+![](/res/large/2021-09-23-hyperloop/diagram.png)
+***
+## Overall Goals
+**
+Work more closely with other subsystems
+**
+Refactor software to be more extensible
+**
+Explore alternative hardware options
+**
+Build the systems to control any other subsystems that get built this semester</description></item><item><title>Intro to Git</title><link>https://garykim.dev/other/intro-to-git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/other/intro-to-git/</guid><description>
+# Intro to Git
+by Gary Kim
+***
+### What is Git?
+**
+Git is a (distributed) version control system.
+**
+Essentially, Git keeps track of every version of your file that you have "committed". This lets you, for example, remove a change that you made that you know introduced a bug.
+**
+Git also allows multiple people to work on the same code at the same time by allowing people to make changes on their own local systems then having code to combine changes from multiple people. This process is called merging.
+***
+### Pro Git 2nd Edition
+A lot of the information in this presentation is from the Pro Git 2nd Edition book. If you're interested in Git after this presentation, I'd recommend reading Pro Git and the source code of Git available at &lt;https://git.kernel.org/pub/scm/git/git.git>
+***
+### What we are covering
+**
+#### Git Porcelain Commands
+```bash
+git add
+git commit
+git checkout
+git branch
+git log
+git reset
+```
+and many more
+***
+## Creating a Repo
+**
+#### TL;DR
+```bash
+mkdir reponame
+cd reponame
+git init
+```
+**
+Running the command `git init` will make the current directory that you are in a Git repository.
+***
+## Status
+**
+One of the most useful commands in Git
+```
+git status
+```
+This will show you the current state of your Git repo and tells you how to do things that you may be looking to do.
+**
+#### Example output
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+Changes not staged for commit:
+(use "git add &lt;file>..." to update what will be committed)
+(use "git checkout -- &lt;file>..." to discard changes in working directory)
+modified: content/other/intro-to-git.html
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+***
+## Making changes and committing them
+**
+#### TL;DR
+Make your change then
+```bash
+git add -A
+git commit -m "Commit message"
+```
+**
+To make a commit, you will need to make a change, add that change to the staging area, then commit the change.
+**
+1. Make whatever changes you want
+2. Add add changes to the staging area by running
+```
+git add -A
+```
+3. Commit your changes with
+```
+git commit -m "Commit message"
+```
+**
+Keep in mind that Git stores files, not directories (folders). If you want an empty directory, the convention is to place an empty file in the directory called `.gitkeep` so Git keeps a record of it.
+**
+Typing `git log` will show you the history of commits in the repo that led up to the commit that you currently have checked out.
+```Text
+gary@gary-DESKTOP1:~/tmp/git/garykim.dev$ git log
+commit 77ce6412667724809bc040cd808829596aaf10c5 (HEAD -> master, origin/master, origin/HEAD)
+Author: Gary Kim &lt;gary@garykim.dev>
+Date: Thu Sep 10 23:16:43 2020 -0400
+Add reveal + intro to git
+commit da1a347c2c9d196e53aa3704a0570428dbee8915 (messing-with-reveal)
+Author: Gary Kim &lt;gary@garykim.dev>
+Date: Thu Sep 10 13:23:44 2020 -0400
+Add Go Nextcloud Talk library release
+commit 62dcd42e78ddc5b3180a1b7638102f88bca47d45
+Author: Gary Kim &lt;gary@garykim.dev>
+Date: Tue Sep 8 09:16:36 2020 -0400
+Add images for passing-saspes-maintainership
+commit 69ddafa136e6ac526ca45ee5a100ab94b306c8ff
+Author: Gary Kim &lt;gary@garykim.dev>
+Date: Tue Sep 8 06:58:47 2020 -0400
+Update date on lastest post
+commit 377e6ad3ca57cdb83723e07326e90dacb6e2d07c (origin/blog/saspes-maintainership, blog/saspes-maintainership)
+Author: Gary Kim &lt;gary@garykim.dev>
+Date: Sat Sep 5 06:57:23 2020 -0400
+blog post: Passing SAS PES Mainainership
+Signed-off-by: Gary Kim &lt;gary@garykim.dev>
+```
+**
+The more inquisitive among you will be asking why it is the staging area exists. You don't actually have to commit every change you made in one go. If you think it makes more sense to separate the changes you made into different commits, you can `git add` only the files you want to commit. You can even only commit some of the changes you made in a single file by using `git add -p`.
+***
+## Branches
+**
+#### TL;DR
+New branch with current checked out commit
+```
+git checkout -b branch-name
+```
+Checkout to another branch
+```
+git checkout branch-name
+```
+**
+Git includes the concept of branches which you can think of as different versions (or "editions") of your software. They allow for you and multiple other people to work on different features or bug fixes simultaneously without them interfering with each other.
+**
+Use `git checkout -b branch-name` to make a new branch. Once you make a new branch, you can make commits in this branch.
+**
+The main branch is called `master` by convention though some projects are changing to using `main` in order to avoid potentially causing issues by referencing a master-slave relationship.
+**
+Fun fact: `git checkout -b branch-name` is actually a shortcut for typing
+```
+git branch branch-name # Create a branch with the name branch-name
+git checkout branch-name # Switch to the branch named branch-name
+```
+***
+## Remotes
+**
+Git has a built in feature for having `remotes`. These remotes are essentially places where you can push and pull your Git repo from.
+**
+There are many different Git servers available. Some commercial, most open-source, some paid, some free, and so on.
+**
+[GitHub](https://github.com) is one of the most popular ones, especially for those making open source software.
+Shameless plug: I'm also going to shout out [Gitea](https://gitea.io) as I am a maintainer for Gitea.
+**
+To download a repo to your computer from a Git server, use the following:
+```
+git clone https://github.com/gary-kim/website
+```
+This will create a new directory with the repository.
+**
+You can push new commits you may have made to a branch by using the following:
+```
+git push origin branch-name [--set-upstream]
+```
+You can also add the `--set-upstream` flag so that next time you want to push this branch, you can simply use the following:
+```
+git push
+```
+**
+#### Pull Changes
+To pull new changes into your current branch from the remote, run the following command:
+```
+git pull
+```
+**
+#### Fetch Changes
+If you want to only fetch changes and leave your local branch untouched, use the following:
+```
+git fetch
+```
+**
+#### Edit remotes
+Editing remotes is a relatively advanced thing to do but here are the basics:
+```
+git remote rename origin upstream
+git remote add origin https://git.garykim.dev/gary-kim/at-psychology-writeup
+git remote remove upstream
+```
+***
+## Common Operations
+**
+#### Make a change and push it to a remote
+The most common operation you are going to do for class is to commit a change and push it to a remote. In the default setup for Git, the following commands will work:
+```
+git add -A
+git commit -m "Commit message"
+git push origin &lt;branch-name>
+```
+**
+#### Amend latest commit
+If you made a mistake in your last commit, you can fix your mistake then "amend" your last commit to include your fix by adding the `--amend` flag to your commit command.
+```
+git add -A
+git commit --amend
+```
+If you have already pushed to your git remote, you're going to have to force push. Otherwise, your git remote will refuse to receive a commit that does have the commit it already has.
+```
+git push --force-with-lease
+```
+**
+#### Revert a commit
+If you need to undo a change that you made, you can use this command:
+```
+git revert &lt;commit-hash>
+```
+This will add a revert commit that undoes the changes that were made in that commit. Future changes will be left alone.
+**
+#### Checkout a commit
+If you want to see what your repo was like after a specific commit, use the following command:
+```
+git checkout &lt;commit-hash>
+```
+**
+#### Diff a commit
+If you want to see the difference between two versions of your software, use the following command:
+```
+git diff &lt;commit-hash-1> &lt;commit-hash-2>
+```
+You can see the difference between your edited files and your staging area by using this command:
+```
+git diff [--cached]
+```
+Add `--cached` to see the difference between your staging area and your latest commit.
+**
+#### Rebase
+You can use the rebase command to reapply the changes you made on top of another version of the repository. This is useful for if you have unintentionally allowed your local branch and remote branch to diverge, for example.
+```
+git rebase origin/master
+```
+WARNING: will likely require manual changes during the process.
+**
+#### Squash
+Git has the ability to combine multiple commits into one.
+```
+git rebase -i HEAD~3
+```
+with '3' being the number of commits behind you want to edit.
+Keep in mind, you are changing your repository history by doing this and will need to force push if you already force pushed your previous changes to a remote.
+Continued on the next page
+**
+#### Interactive Rebase
+While the last slide showed how to squash commits, the same command is used for when you want to edit a part of your Git history for one reason or another.
+WARNING: if you accidentally committed a secret and pushed it, changing history and force pushing it will not remove the data from your remote. If this happens, consider the secret no longer secret.
+***
+## Internals of Git
+At this point, you should have everything you need to use Git in your everyday life.
+If you stay, we are going to take a deep dive into how Git stores data internally.
+***
+Take a look in one of your Git repositories, specifically, in the `.git` directory.
+```
+gary@gary-DESKTOP1:~/tmp/git/garykim.dev$ ls -lh .git
+total 72K
+drwxr-xr-x 2 gary gary 4.0K Dec 1 2019 branches
+-rw-r--r-- 1 gary gary 517 Sep 10 23:16 COMMIT_EDITMSG
+-rw-r--r-- 1 gary gary 631 Sep 5 07:14 config
+-rw-r--r-- 1 gary gary 73 Dec 1 2019 description
+-rw-r--r-- 1 gary gary 344 Sep 8 06:49 FETCH_HEAD
+-rw-r--r-- 1 gary gary 23 Sep 10 23:16 HEAD
+drwxr-xr-x 2 gary gary 4.0K Dec 29 2019 hooks
+-rw-r--r-- 1 gary gary 8.6K Sep 10 23:16 index
+drwxr-xr-x 2 gary gary 4.0K Dec 1 2019 info
+drwxr-xr-x 4 gary gary 4.0K Dec 29 2019 lfs
+drwxr-xr-x 3 gary gary 4.0K Dec 1 2019 logs
+drwxr-xr-x 3 gary gary 4.0K Dec 1 2019 modules
+drwxr-xr-x 228 gary gary 4.0K Sep 10 23:16 objects
+-rw-r--r-- 1 gary gary 41 Sep 8 06:49 ORIG_HEAD
+-rw-r--r-- 1 gary gary 114 Apr 26 09:14 packed-refs
+drwxr-xr-x 5 gary gary 4.0K Dec 1 2019 refs
+```
+Let's go through the important files and directories in here one by one
+**
+From Pro Git 2nd Edition
+![](https://git-scm.com/book/en/v2/images/data-model-4.png)
+***
+### objects
+**
+The `objects` directory actually contains pretty much all the information in the Git repo. There are 3 different types of objects:
+* blob
+* tree
+* commit
+**
+The data is stored in a simple key-value format. Every file has a hash that is calculated from the file contents and extra header information. That hash is the key of the object with the value being the actual contents of the object.
+**
+The way that the objects are stored are such that they can be found by going into the directory of the first 2 characters of the hash, then the next 38 characters (the hash is always 40 characters long).
+For example, `00a5a73587b4d2623b73fd2a9dacff06678f2972` will be found at `.git/objects/00/a5a73587b4d2623b73fd2a9dacff06678f2972`
+**
+If you know the hash of an object, you can print out the contents of the object.
+```
+$ git cat-file -p 73ab8769f93bbbd5c4b69d33c2fa86329d05bc85
+public/
+resources/
+```
+**
+***
+### objects: blob
+**
+The contents of the files in a repository are stored in blob objects. Some header information about the object and the file contents are appended together then compressed using zlib for storage.
+***
+### objects: tree
+**
+Trees in Git can be thought of like a directory. They contain references to other trees and blobs that they contain.
+**
+From Pro Git 2nd Edition
+![](https://git-scm.com/book/en/v2/images/data-model-1.png)
+**
+```
+$ git cat-file -p b96b39d54ef0cd5b042a2bd1f7fdf461461057e2
+100644 blob eef4a0d63511343e423e45cac5863494932ea3e8 .drone.yml
+100644 blob f8a215faf3673dc7547e03b7f526a318cfbacaf1 .gitattributes
+040000 tree 2d3531561b3ac0aec7c61225e074187542530f79 .github
+100644 blob 73ab8769f93bbbd5c4b69d33c2fa86329d05bc85 .gitignore
+100644 blob 6ee8409d3f0750348e6ebb9f163ee15d4825c8b6 .gitmodules
+100644 blob d7caa21062663531e2f1bef2c67f0689128526dc LICENSE
+100644 blob da7e07962e7fa4a318e5f7d478b74db403bcad3b Makefile
+100644 blob dcd04779a0ee991ca481365a07b77eed62b3f6a1 README.md
+040000 tree 7d69efe920574b660dbf45fe91277ce8ff5532ec archetypes
+040000 tree 4eeabaaab6cdeeb130af7886205e0235cbd85192 assets
+100644 blob 76d82befa072fbbf8a953bcac7f5707835bda1de config.json
+040000 tree 0b73510f573d8d5ba2c8efdf6373a84f624394c2 content
+040000 tree b3f02be5f73b6bc45dcde59687a6a8ce4c808060 layouts
+040000 tree a89038e2a1db7d1f572e5a94ef34835d74673953 scripts
+040000 tree 4c4d10069497d25a226a37b423292c381711ed6f static
+040000 tree 14b3e6c98ac4b599e463dda8b5b0562bcaaaf347 themes
+```
+***
+## Objects: Commit
+**
+Commit objects refer to a commit. They contain information about the commit, the commit that came before it, and points to a tree that points to the correct versions of all the files in the repository.
+**
+```
+$ git cat-file -p 2833bf6d3598970b84397a800cad56b87540cc1d
+6d3598970b84397a800cad56b87540cc1d
+tree 8317d82ef29cb6de1873b17dc936cc83a4b85437
+parent e9a9322d1c6f558a23e3cbaa85a2486138b7cced
+author Gary Kim &lt;gary@garykim.dev> 1599856386 -0400
+committer Gary Kim &lt;gary@garykim.dev> 1599856386 -0400
+gpgsig -----BEGIN PGP SIGNATURE-----
+iMkEABMKAC8WIQTOtMFZ8Znek/pl4SWTSbWftUWUrAUCX1vfCxEcZ2FyeUBnYXJ5
+a2ltLmRldgAKCRCTSbWftUWUrN1nAgj83/UezOFGXhx3vB55Uq6I+zu32z9RgBUs
+W6Tt4e2/+cxOodAvPXTLzFvABavVgcOKDKueDN0WdSDKCP5H+2n8rgIGOJZf6iug
+wqgrdlH4x5GrAQHuB0EDWQAARCD1TUz+MOqBz5BxOdK7CU2H+OlDMXWLCtrUKx3c
+J57/VsdSO+EFh6Y=
+=X+LW
+-----END PGP SIGNATURE-----
+Fix angle brackets in reveal
+```
+**
+Because the hash of the commit is based on the hash of the previous commit and the tree's hash which is based on the exact layout and contents of the repository, no change can be made in a repository's history without changing these hashes. A change in a commit hash is very obvious to anyone else that may be working with the project.
+***
+## refs
+**
+You may be thinking, if all data is stored in a key-value store, how does Git know where to start for any operation. This is where `refs` come into play. Inside the `refs` directory, you will find references to keys to look in the key value store for.
+**
+```
+$ cat refs/heads/master
+2833bf6d3598970b84397a800cad56b87540cc1d
+$ git cat-file -p 2833bf6d3598970b84397a800cad56b87540cc1d
+tree 8317d82ef29cb6de1873b17dc936cc83a4b85437
+parent e9a9322d1c6f558a23e3cbaa85a2486138b7cced
+author Gary Kim &lt;gary@garykim.dev> 1599856386 -0400
+committer Gary Kim &lt;gary@garykim.dev> 1599856386 -0400
+gpgsig -----BEGIN PGP SIGNATURE-----
+iMkEABMKAC8WIQTOtMFZ8Znek/pl4SWTSbWftUWUrAUCX1vfCxEcZ2FyeUBnYXJ5
+a2ltLmRldgAKCRCTSbWftUWUrN1nAgj83/UezOFGXhx3vB55Uq6I+zu32z9RgBUs
+W6Tt4e2/+cxOodAvPXTLzFvABavVgcOKDKueDN0WdSDKCP5H+2n8rgIGOJZf6iug
+wqgrdlH4x5GrAQHuB0EDWQAARCD1TUz+MOqBz5BxOdK7CU2H+OlDMXWLCtrUKx3c
+J57/VsdSO+EFh6Y=
+=X+LW
+-----END PGP SIGNATURE-----
+Fix angle brackets in reveal
+```
+**
+This is actually all branches are. `refs` to different commits.
+***
+## Packfiles
+**
+You would have noticed that because of the way Git stores data, the smallest change to a file results in the file being resaved again. This takes up a lot of storage. Packfiles exist to fix this problem.
+**
+Packfiles are files that each store many objects. Packfiles are capable of storing diffs between versions rather than storing entire files. This is how Git can work on large repositories without quickly growing out of control.
+***
+If you want to learn more, read the [Git Source Code](https://git.kernel.org/pub/scm/git/git.git) and [Pro Git 2nd Edition](https://git-scm.com/book/en/v2)!</description></item><item><title>Projects</title><link>https://garykim.dev/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/projects/</guid><description>&lt;h1 id="my-projects-primary-maintainer-or-creator">My Projects (Primary Maintainer or Creator)&lt;/h1>
+&lt;h2 id="sas-powerschool-enhancement-suite">SAS Powerschool Enhancement Suite&lt;/h2>
+&lt;p>SAS Powerschool Enhancement Suite is a free and open source extension for Firefox and Chromium based browsers that enhances the experience of using Powerschool at Singapore American School.&lt;/p>
+&lt;p>I am the creator of the project but primary maintainership has now been passed to another maintainer. &lt;a href="https://garykim.dev/blog/2020/09/08/sas-powerschool-enhancement-suite-has-a-new-maintainer/">Read more here&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>License: &lt;strong>AGPL-3.0-only&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>GitHub Project: &lt;a href="https://github.com/gary-kim/saspes">https://github.com/gary-kim/saspes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Firefox Download: &lt;a href="https://github.com/gary-kim/saspes/releases">https://github.com/gary-kim/saspes/releases&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chrome Web Store Download: &lt;a href="https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk">https://chrome.google.com/webstore/detail/sas-powerschool-enhanceme/ehnkngeidilnoabcjjimkomcggndbhnk&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/1.png"
+alt="Main Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/2.png"
+alt="Second Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/projects/saspes/3.png"
+alt="Third Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="go-nc-talk">Go NC Talk&lt;/h2>
+&lt;p>Go NC Talk is a Go library for accessing and using Nextcloud Talk. It is made primarily to be used by &lt;a href="#matterbridge">Matterbridge&lt;/a> but is designed to be able to be used in any Go software.&lt;/p>
+&lt;ul>
+&lt;li>License: &lt;strong>Apache-2.0&lt;/strong>&lt;/li>
+&lt;li>Import Path: &lt;code>gomod.garykim.dev/nc-talk&lt;/code>&lt;/li>
+&lt;li>GitHub Project: &lt;a href="https://github.com/gary-kim/go-nc-talk">https://github.com/gary-kim/go-nc-talk&lt;/a>&lt;/li>
+&lt;li>GoDoc Documentation: &lt;a href="https://pkg.go.dev/gomod.garykim.dev/nc-talk">https://pkg.go.dev/gomod.garykim.dev/nc-talk&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="element-for-nextcloud">Element for Nextcloud&lt;/h2>
+&lt;p>&lt;a href="https://github.com/gary-kim/riotchat">Element for Nextcloud&lt;/a> is a &lt;a href="https://nextcloud.com">Nextcloud&lt;/a> App that integrates &lt;a href="https://element.io">Element&lt;/a> into Nextcloud. It allows Nextcloud admins to easily install and configure Element for their users and join the Matrix network.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>License: &lt;strong>AGPL-3.0-or-later&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nextcloud App Page: &lt;a href="https://apps.nextcloud.com/apps/riotchat">https://apps.nextcloud.com/apps/riotchat&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>GitHub Project: &lt;a href="https://github.com/gary-kim/riotchat">https://github.com/gary-kim/riotchat&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Matrix Development Chat: &lt;a href="https://matrix.to/#/#elementfornextcloud-general:garykim.dev">https://matrix.to/#/#elementfornextcloud-general:garykim.dev&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/riotchat-for-nextcloud/screenshot-2.png"
+alt="Screenshot"/>
+&lt;/figure>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/riotchat-for-nextcloud/main-screenshot.png"
+alt="Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://garykim.dev/res/large/riotchat-for-nextcloud/screenshot-3.png"
+alt="Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="open-ias-scoreboard">Open IAS Scoreboard&lt;/h2>
+&lt;p>Open IAS Scoreboard is an Electron application for putting scoreboards on sports event livestreams.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>License: &lt;strong>AGPL-3.0-only&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>GitHub Project: &lt;a href="https://github.com/gary-kim/open-ias-scoreboard">https://github.com/gary-kim/open-ias-scoreboard&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Project Website: &lt;a href="https://github.com/gary-kim/">https://github.com/gary-kim/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">&lt;/th>
+&lt;th style="text-align:center">&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://openias.garykim.dev/img/controlboard-screenshot.png"
+alt="Control Board Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;td style="text-align:center">&lt;figure class="centered">&lt;img src="https://openias.garykim.dev/img/scoreboard-screenshot.png"
+alt="Scoreboard Screenshot"/>
+&lt;/figure>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h1 id="maintainer">Maintainer&lt;/h1>
+&lt;h2 id="nextcloud">Nextcloud&lt;/h2>
+&lt;p>Nextcloud is a suite of software that essentially provides a free and open source, community driven, and self-hosted replacement to for many of Google&amp;rsquo;s groupware and productivity services.&lt;/p>
+&lt;ul>
+&lt;li>License: &lt;strong>AGPL-3.0-or-later&lt;/strong>&lt;/li>
+&lt;li>GitHub Organization: &lt;a href="https://github.com/nextcloud">https://github.com/nextcloud&lt;/a>&lt;/li>
+&lt;li>Website: &lt;a href="https://nextcloud.com">https://nextcloud.com&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="gitea">Gitea&lt;/h2>
+&lt;p>Gitea is an free and open source, community driven, and self-hosted Git hosting software. It includes an issue tracker, pull request system, code reviews, and many other features needed for software development.&lt;/p>
+&lt;ul>
+&lt;li>License: &lt;strong>MIT&lt;/strong>&lt;/li>
+&lt;li>GitHub Organization: &lt;a href="https://github.com/go-gitea">https://github.com/go-gitea&lt;/a>&lt;/li>
+&lt;li>Gitea Organization: &lt;a href="https://gitea.com/gitea">https://gitea.com/gitea&lt;/a>&lt;/li>
+&lt;li>Website: &lt;a href="https://gitea.io">https://gitea.io&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="contributor">Contributor&lt;/h1>
+&lt;h2 id="rclone">Rclone&lt;/h2>
+&lt;p>From the website:&lt;/p>
+&lt;blockquote>
+&lt;p>Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors&amp;rsquo; web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business &amp;amp; consumer file storage services, as well as standard transfer protocols.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>License: &lt;strong>MIT&lt;/strong>&lt;/li>
+&lt;li>GitHub Project: &lt;a href="https://github.com/rclone/rclone">https://github.com/rclone/rclone&lt;/a>&lt;/li>
+&lt;li>Website: &lt;a href="https://rclone.org">https://rclone.org&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="matterbridge">Matterbridge&lt;/h2>
+&lt;p>From the GitHub repo:&lt;/p>
+&lt;blockquote>
+&lt;p>bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocketchat, steam, twitch, ssh-chat, zulip, whatsapp, keybase, matrix, microsoft teams, nextcloud and more with REST API (mattermost not required!)&lt;/p>
+&lt;/blockquote>
+&lt;p>My primary addition to Matterbridge has been the addition of the &lt;code>nctalk&lt;/code> backend that adds support for &lt;a href="https://nextcloud.com/talk/">Nextcloud Talk&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>License: &lt;strong>Apache-2.0&lt;/strong>&lt;/li>
+&lt;li>GitHub Project: &lt;a href="https://github.com/42wim/matterbridge">https://github.com/42wim/matterbridge&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Sustainable Development Goals</title><link>https://garykim.dev/other/cu-101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/other/cu-101/</guid><description>
+# Sustainable Development Goals
+### by Gary Kim
+***
+![](/res/large/sdg/cities.png)
+Specifically regarding transportation in NYC
+***
+NYC Public Transportation
+**
+New York City's public transportation is managed by the MTA: a public benefit corporation.
+**
+![](https://upload.wikimedia.org/wikipedia/commons/5/56/R160_E_enters_42nd_Street.jpg)
+***
+Problem statement
+**
+What events throughout history contributed to New York City's public transport system what it is today and what can be done to improve both its quality and access to help make New York City a more sustainable city?</description></item><item><title>Vittoria Colonna</title><link>https://garykim.dev/other/vittoria/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>gary@garykim.dev (Gary Kim)</author><guid>https://garykim.dev/other/vittoria/</guid><description>
+# Vittoria Colonna
+### by Gary Kim
+***
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sebastiano_del_Piombo_-_Vittoria_Colonna_%28%3F%29_-_Google_Art_Project.jpg/549px-Sebastiano_del_Piombo_-_Vittoria_Colonna_%28%3F%29_-_Google_Art_Project.jpg?download)
+***
+## Chronology
+**
+### 1490
+Born in Marino on an estate held by the Colonna family. (Modern day Italy)
+![](/res/large/vittoria/marino.png)
+**
+### 1501
+Moved to the d'Avalos family home in Ischia.
+Began being mentored by Costanza d'Avalos, Vittoria's future husband's aunt.
+![](/res/large/vittoria/ischia.png)
+Note:
+The land was confiscated
+**
+### 1501 Continued
+Costanza gave Vittoria a humanist education in literature and arts.
+**
+### 1509
+Married to Fernando Francesco d'Avalos. Became part of Costanza d'Avalos's literary circle.
+**
+### 1511-1512
+Vittoria's husband went to fight against the French then was taken captive
+**
+### 1525
+Vittoria's husband passes away from the wounds suffered during the Battle of Pavia.
+![](/res/large/vittoria/pavia.png)
+**
+### 1529
+Vittoria returned to Rome. Started to become aquatinted with several religious reformers such as Juan de Valdes and gain an interest in the reformation movement.
+**
+### 1529 Continued: The Reformation Movement
+The reformation movement was a movement to reform the catholic church which the members of the movement believed were not functioning properly in one way or another.
+Vittoria supported reformation though it is not clear whether she supported protestant reformation specifically.
+**
+### 1536-1538
+Met and began a very close relationship with Michelangelo.
+**
+### 1537
+Helped establish a a Capuchin monastery for reforming monk Bernardino Ochino.
+By this point, Vittoria knew many members of the Italian reformation movement personally.
+**
+### 1547
+Passed away in the San Silvestro church in Rome
+![](/res/large/vittoria/passed.png)
+***
+## Writing Style
+#### Petrarchan Sonnet Format
+**
+### Petrarch
+Poet during the 14th century
+**
+### _Canzoniere_
+Many poems (mostly sonnets) of love about a woman named Laura
+**
+### Petrarchan Sonnet Format
+Split into the octave and the sestet with a specific rhyme format.
+**
+### Vittoria's Use
+Same format to write about love as well but also spirituality and religion.
+***
+## Vittoria's Works
+**
+### _Rime_
+First released in 1538 by Parma press without Vittoria's permission
+&lt;img height="400" src="https://tmm.chicagodistributioncenter.com/IsbnImages/9781649590145.jpg">
+**
+### _Rime_ Continued
+_Rime_ contained a collection of sonnets written by Vittoria.
+The first collection of over 140 sonnets are about Vittoria's mourning her husband's death and figuring out what to do with her future while preserving his memory.
+As time goes on, the sonnets turn to discussing how people should live their lives and spirituality/connecting with god.
+***
+### Friends and Associates
+**
+Friends with many involved in the reformation movement.
+Vittoria was part of the literary circle of Costanza d'Avalos.
+She also joined several groups with reformatist ideals. She became a prominent member of Accademia Pontaniana.
+**
+### Michelangelo
+Met in 1536-1538
+Started a really close friendship
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/512px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg)
+**
+### Michelangelo continued
+Vittoria and Michelangelo encouraged each other to write. Their sonnets were mostly about the spiritual issues that occupied them.
+Many of these sonnets that they wrote after meeting were addressed to the other.
+There are many informal letters and summons back and forth
+**
+### Michelangelo continued
+After Vittoria's death, Michelangelo was overcome with grief for a while.
+***
+## Any Questions?
+***
+## Image Credits
+**
+### Maps
+All maps used in this presentation are
+`© OpenStreetMap contributors`
+**
+`Sebastiano del Piombo, Public domain, via Wikimedia Commons`
+https://commons.wikimedia.org/wiki/File:Sebastiano_del_Piombo_-_Vittoria_Colonna_(%3F)_-_Google_Art_Project.jpg
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sebastiano_del_Piombo_-_Vittoria_Colonna_%28%3F%29_-_Google_Art_Project.jpg/549px-Sebastiano_del_Piombo_-_Vittoria_Colonna_%28%3F%29_-_Google_Art_Project.jpg?download)
+**
+`Altichiero, Public domain, via Wikimedia Commons`
+https://commons.wikimedia.org/wiki/File:Altichiero,_ritratto_di_Francesco_Petrarca.jpg
+![](https://upload.wikimedia.org/wikipedia/commons/d/d9/Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg)
+**
+Daniele da Volterra, Public domain, via Wikimedia Commons
+https://commons.wikimedia.org/wiki/File:Michelangelo_Daniele_da_Volterra_(dettaglio).jpg
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/512px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg)
+**
+The University of Chicago Press Books
+https://press.uchicago.edu/ucp/books/book/distributed/P/bo99702214.html
+![](https://tmm.chicagodistributioncenter.com/IsbnImages/9781649590145.jpg)
+***
+## Sources
+**
+https://en.wikipedia.org/wiki/Vittoria_Colonna
+https://www.lib.uchicago.edu/efts/IWW/BIOS/A0011.html
+https://www.youtube.com/watch?v=1o8oIELbNxE
+**
+http://o.b5z.net/i/u/10221720/f/WoR_-_Vittoria_Colonna.pdf
+https://www.britannica.com/biography/Petrarch
+https://poets.org/poet/petrarch
+**
+https://www.placefortruth.org/blog/vittoria-colonna-%E2%80%93-poet-who-inspired-michelangelo
+https://womenineuropeanhistory.wordpress.com/2017/01/30/vittoria-colonna/
+https://www.encyclopedia.com/people/literature-and-arts/italian-literature-biographies/vittoria-colonna
+**
+https://www.nytimes.com/2018/06/01/books/review/vittoria-colonna-renaissance-woman-ramie-targoff.html
+https://archive.org/details/lifevittoriaco00trol
+https://archive.org/details/vittoriacolonnaw00jerruoft
+**
+https://en.wikipedia.org/wiki/Accademia_Pontaniana
+https://press.uchicago.edu/ucp/books/book/distributed/P/bo99702214.html</description></item></channel></rss>
